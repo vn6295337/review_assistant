@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_243.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n-dir ./my_chunks --top-k 8\n\"\"\"\n\nimport argparse, json, os\nfrom pathlib import Path\n\n# Grab default CHUNKS_DIR from config.sh if present\nCFG = Path(__file__).resolve().parents[1] / \"scripts\" / \"config.sh\"\nDEFAULT_CHUNKS = \"./outputs/chunks\"\nif CFG.is_file():\n    with open(CFG) as f:\n        for ln in f:\n            if ln.startswith(\"export CHUNKS_DIR\"):\n                DEFAULT_CHUNKS = ln.split(\"=\",1)[1].strip().strip('\"')\n                break\n\ndef load_chunks(dir_path: Path):\n    items = []\n    for fp in dir_path.glob(\"*.json\"):\n        data = json.loads(fp.read_text())\n\n\u2026"
+}

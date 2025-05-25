@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_12.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\name\" ]; then\n        echo \"* $session_name (current)\"\n      else\n        echo \"  $session_name\"\n      fi\n    fi\n  done\n}\n\n# Switch to a session\nswitch_session() {\n  local session_name=\"$1\"\n  local session_dir=\"${SESSION_DIR}/${session_name}\"\n  \n  if [ ! -d \"$session_dir\" ]; then\n    echo \"Session does not exist: $session_name\"\n    return 1\n  fi\n  \n  echo \"$session_name\" > \"$CURRENT_SESSION_FILE\"\n\n\u2026"
+}

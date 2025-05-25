@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_71.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nhelp='Title for the chat session (optional)')\n    return parser.parse_args()\n\ndef create_output_directory(output_dir):\n    \"\"\"Create the output directory if it doesn't exist.\"\"\"\n    try:\n        Path(output_dir).mkdir(parents=True, exist_ok=True)\n        return True\n    except Exception as e:\n        print(f\"Error creating directory: {e}\")\n        return False\n\ndef get_chat_content():\n    \"\"\"Get the chat content from the user.\"\"\"\n    print(\"\\n=== Claude Chat Exporter ===\")\n    print(\"\\nInstructions:\")\n    print(\"1. In your Claude chat window, select all content (Ctrl+A)\")\n    print(\"2. Copy it to clipboard (Ctrl+C)\")\n    print(\"3. Paste it below (Ctrl+V) and press Enter twice to finish\")\n    print(\"\\nPaste your chat content here:\")\n\n\u2026"
+}

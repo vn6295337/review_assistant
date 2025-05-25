@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_272.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nPath(chunks_dir)\n    \n    # Filter by extensions if specified\n    if extensions:\n        ext_list = extensions.split(',')\n        # Make sure each extension starts with a dot\n        ext_list = [ext if ext.startswith('.') else f'.{ext}' for ext in ext_list]\n    else:\n        ext_list = None\n    \n    # Walk through the chunks directory\n    for root, _, files in os.walk(chunks_dir):\n        for file in files:\n            # Skip non-JSON files\n            if not file.endswith('.json'):\n                continue\n            \n            # Skip files that don't match the specified extensions\n            if ext_list:\n                file_path = Path(file)\n\n\u2026"
+}

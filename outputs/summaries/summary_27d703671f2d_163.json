@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_163.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nsession')\n    return parser.parse_args()\n\n\ndef reset_output_directory(output_dir):\n    try:\n        if os.path.exists(output_dir):\n            shutil.rmtree(output_dir)\n        Path(output_dir).mkdir(parents=True, exist_ok=True)\n        print(f\"\ud83e\uddf9 Cleaned and recreated output directory: {output_dir}\")\n        return True\n    except Exception as e:\n        print(f\"\u274c Could not reset output directory: {e}\")\n        return False\n\n\ndef read_chat_from_file(filepath):\n    try:\n        with open(filepath, 'r', encoding='utf-8') as f:\n            return f.read()\n\n\u2026"
+}

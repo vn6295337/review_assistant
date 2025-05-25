@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_122.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ncho\n  \n  # Navigate to the scripts directory\n  cd \"$SCRIPTS_DIR\" || { echo \"Error: Scripts directory not found\"; return; }\n  \n  # Run the search with proper command structure\n  python3 chunk_searcher.py search --query \"$QUERY\" --chunks-dir \"$CHUNKS_DIR\"\n  \n  echo\n  echo \"Press any key to continue...\"\n  read -n 1\n}\n\n# Functions for multi-chunk prompt creation\nlist_prompts() {\n  cd \"$SCRIPTS_DIR\" || { echo \"Error: Scripts directory not found\"; return; }\n  python3 mcp_helper.py list --dir \"$MCP_DATA_DIR\"\n}\n\ncreate_new_prompt() {\n\n\u2026"
+}

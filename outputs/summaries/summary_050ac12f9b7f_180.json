@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_180.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nt/chromeos/removable/USB Drive/review_assistant/config.sh\nYou need to make sure config.sh exists there.\n\n3. Check config.sh presence\nRun from the review_assistant folder:\n\nls -l \"/mnt/chromeos/removable/USB Drive/review_assistant/config.sh\"\nIf you get No such file or directory, it means config.sh isn't where you expect.\n\n4. How to fix\nMake sure config.sh is located in /mnt/chromeos/removable/USB Drive/review_assistant/\n\nIf it's somewhere else, move or copy it there, e.g.:\n\nmv /mnt/chromeos/removable/USB\\ Drive/review_assistant/scripts/config.sh /mnt/chromeos/removable/USB\\ Drive/review_assistant/\n5. Once config.sh is in the right place:\nFrom anywhere, you can do:\n\ncd \"/mnt/chromeos/removable/USB Drive/review_assistant/scripts\"\n./run_chat.sh \"Chat with CFO\"\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_191.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nmpt Helper\n\nThis script assembles summarized chunks into a unified prompt\nfor use with AI assistants in a local RAG workflow.\n\nCommand line arguments: Uses argparse for command-line arguments\n\nFunctions:\n- load_template: Load a prompt template file.\n- load_summaries: Load all summary JSON files in a directory.\n- generate_prompt: Assemble the final prompt from summaries and a template.\n- save_prompt: Save prompt to a timestamped .txt file.\n- main\n\nMain function: main\n\n\n----------------------------------------\nDriver Script: main.py\n\n\n\u2026"
+}

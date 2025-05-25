@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_111.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\novable/USB Drive/review_assistant/codebase/chat_sessions\"\nTMP_FILE=\"/tmp/claude_chat.txt\"\nROOT_DIR=\"/mnt/chromeos/removable/USB Drive/review_assistant\"\nPYTHON_DIR=\"$ROOT_DIR/python\"\nCHUNKS_DIR=\"$ROOT_DIR/chunks\"\nSUMMARIES_DIR=\"$ROOT_DIR/outputs/summaries\"\n\nmkdir -p \"$EXPORT_DIR\" \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\"\n\n# Colors\nGREEN='\\033[0;32m'\nRED='\\033[0;31m'\nCYAN='\\033[0;36m'\nNC='\\033[0m' # No Color\n\nshow_instructions() {\n  echo -e \"${CYAN}=== Claude Chat Exporter ===${NC}\"\n  echo \"Save your Claude chat as text:\"\n  echo \"1. Open a terminal text editor (e.g., nano)\"\n  echo \"2. Paste copied chat into: $TMP_FILE\"\n\n\u2026"
+}

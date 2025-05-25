@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_364.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nexcept FileNotFoundError:\n        print(\"\u274c nano is not installed. Install it with `sudo apt-get install nano`.\")\n        return False\n\n\ndef is_file_nonempty(path: Path) -> bool:\n    return path.exists() and path.stat().st_size > 5  # >5 bytes\n\n\ndef run_python(script: Path, *args):\n    \"\"\"Run a helper Python script; bubble up errors to user.\"\"\"\n    cmd = [sys.executable, str(script), *map(str, args)]\n    result = subprocess.run(cmd)\n    if result.returncode != 0:\n        raise RuntimeError(f\"Helper script failed: {' '.join(cmd)}\")\n\n\ndef main():\n    parser = argparse.ArgumentParser(description=\"Paste chat via nano and run RAG workflow.\")\n    parser.add_argument(\"--title\", type=str, default=\"Chat\",\n\n\u2026"
+}

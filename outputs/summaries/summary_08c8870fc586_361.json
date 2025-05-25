@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_361.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nnment\npython3 -m venv review_assistant_env\nc. Activate it\nsource review_assistant_env/bin/activate\n\u2705 Step 4: Reinstall Python Dependencies\nIf you had a requirements.txt, use it:\n\npip install -r requirements.txt\nIf not, install what was likely used:\n\npip install openai chromadb langchain tiktoken beautifulsoup4\nYou can always reinstall specific packages later.\n\n\u2705 Step 5: Restore Scripts\nRe-create the following files if they are gone:\n\na. chat_exporter.py\nPaste the refactored version I just gave you above into a file:\n\nnano \"/mnt/chromeos/removable/USB Drive/review_assistant/python/chat_exporter.py\"\n\n\u2026"
+}

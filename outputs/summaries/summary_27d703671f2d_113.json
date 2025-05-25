@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_113.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ntested script\nChatGPT said:\nGot it! Here\u2019s the fully refactored, robust, and user-friendly version of your export_chat.sh script with colorized output, input validation, modular functions, and safer shell practices.\n\n#!/bin/bash\nset -euo pipefail\n\n# === Configuration ===\nEXPORT_DIR=\"/mnt/chromeos/removable/USB Drive/review_assistant/codebase/chat_sessions\"\nTMP_FILE=\"/tmp/claude_chat.txt\"\nROOT_DIR=\"/mnt/chromeos/removable/USB Drive/review_assistant\"\nPYTHON_DIR=\"$ROOT_DIR/python\"\nCHUNKS_DIR=\"$ROOT_DIR/chunks\"\nSUMMARIES_DIR=\"$ROOT_DIR/outputs/summaries\"\n\nmkdir -p \"$EXPORT_DIR\" \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\"\n\n# === Colors for output ===\nGREEN='\\033[0;32m'\nRED='\\033[0;31m'\n\n\u2026"
+}

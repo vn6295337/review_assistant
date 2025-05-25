@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_232.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"\"\"Calculate term frequency for a text\"\"\"\n        tokens = self.tokenize(text)\n        term_freq = {}\n        \n        # Count term frequencies\n        for token in tokens:\n            if token in term_freq:\n                term_freq[token] += 1\n            else:\n                term_freq[token] = 1\n        \n        # Add new terms to vocabulary and update document frequencies\n        for token in set(tokens):\n            self.vocabulary.add(token)\n            if token in self.term_doc_freq:\n                self.term_doc_freq[token] += 1\n            else:\n                self.term_doc_freq[token] = 1\n        \n        return term_freq\n\n\u2026"
+}

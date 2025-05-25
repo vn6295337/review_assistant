@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_125.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\necho \"Enter your choice (1-8):\"\n          read -r HELP_CHOICE\n          \n          case $HELP_CHOICE in\n            1) clear; show_help \"mcp_helper.py\" ;;\n            2) clear; show_help \"mcp_helper.py\" \"create\" ;;\n            3) clear; show_help \"mcp_helper.py\" \"add-context\" ;;\n            4) clear; show_help \"mcp_helper.py\" \"list\" ;;\n            5) clear; show_help \"mcp_helper.py\" \"generate\" ;;\n            6) clear; show_help \"mcp_helper.py\" \"export\" ;;\n            7) clear; show_help \"mcp_helper.py\" \"import\" ;;\n            8) continue ;;\n            *) echo \"Invalid choice\"; sleep 1 ;;\n          esac\n          ;;\n        8) continue ;;\n        *) echo \"Invalid choice\"; sleep 1 ;;\n      esac\n      ;;\n    3)\n\n\u2026"
+}

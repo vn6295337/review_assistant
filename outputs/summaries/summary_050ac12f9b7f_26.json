@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_26.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nource \"${ROOT_DIR}/config.sh\"\nAnd ensure you use:\n\n\"${PYTHON_DIR}/file_chunker.py\"\n\"${DEFAULT_CHUNK_SIZE}\"\n\"${DEFAULT_TEMPLATE}\"\nand so on.\n\n\ud83d\udfe2 Benefits of using config.sh:\nCentralized path management (change once, apply everywhere).\n\nEasier to share across multiple scripts (file_chunker.sh, file_summarizer.sh, rag_assistant.sh).\n\nMakes scripts more portable and readable.\n\n\u2705 Summary\nDo you have to create a config.sh?\n\u2192 No, but it's strongly recommended if you're scaling or maintaining multiple RAG scripts.\n\nIf you want, I can refactor your full_rag_workflow.sh to use config.sh cleanly.\n\n\u2026"
+}

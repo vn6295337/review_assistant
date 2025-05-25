@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_387.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nUT_DIR\n- SRC_DIR\n- NUM_CHUNKS\n\n\n\n================================================================================\nDEPENDENCIES ANALYSIS\n================================================================================\n\nDependencies required by the system:\n\nExternal Python libraries used:\n- app\n- auth\n- flask\n- flask_sqlalchemy\n- jwt\n- models\n- pytz\n\n\u2026"
+}

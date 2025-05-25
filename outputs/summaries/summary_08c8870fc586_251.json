@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_251.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nTime, default=datetime.datetime.utcnow)\n    \n    orders = db.relationship('Order', backref='user', lazy=True)\n    \n    def __init__(self, username, email, password):\n        self.username = username\n        self.email = email\n        self.password_hash = generate_password_hash(password)\n    \n    def to_dict(self):\n        return {\n            'id': self.id,\n            'username': self.username,\n            'email': self.email,\n            'is_active': self.is_active,\n            'created_at': self.created_at.isoformat()\n        }\n\nclass Product(db.Model):\n    \"\"\"Product model for the store.\"\"\"\n\n\u2026"
+}

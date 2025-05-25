@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_207.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nssion_name\"\n}\n\n# Get current session\nget_current_session() {\n  if [ -f \"$CURRENT_SESSION_FILE\" ]; then\n    cat \"$CURRENT_SESSION_FILE\"\n  else\n    echo \"default\"\n  fi\n}\n\n\n### 6. Metadata Enhancement\n\nAdd metadata tracking to better manage your chunks:\n\npython\n# In file_chunker.py, modify to include metadata\nchunk_data = {\n\n\u2026"
+}

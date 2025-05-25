@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_307.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n_FILE\"\n      ;;\n    txt)\n      {\n        echo \"$CHAT_TITLE\"\n        echo \"Exported on: $(date)\"\n        echo\n        cat \"$TMP_FILE\"\n      } > \"$OUTPUT_FILE\"\n      ;;\n  esac\n\n  echo -e \"${GREEN}\u2705 Chat exported to: $OUTPUT_FILE${NC}\"\n\n  while true; do\n    echo \"Do you want to process this file with your RAG tools? (y/n)\"\n    read -r PROCESS_CHOICE\n    case \"$PROCESS_CHOICE\" in\n      [Yy]* )\n        echo \"\ud83d\ude80 Running file_chunker.py...\"\n\n\u2026"
+}

@@ -1,0 +1,13 @@
+# Summary Prompt
+
+## Title
+Chat Review 20250520_070332
+
+## Context Summary
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/chunks/2655316cf6e30aae5d99bd8b79fa10b1_0.json",
+  "summary": "{\n  \"id\": \"2655316cf6e30aae5d99bd8b79fa10b1_0\",\n  \"file\": \"/tmp/claude_chat.txt\",\n  \"content\": \"\\n\\nfull_rag_workflow."
+}
+
+## Instructions
+Please generate a concise summary of the main ideas, key points, and recommendations. Keep it actionable and clear.

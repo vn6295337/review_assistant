@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_11.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n1\n    }\n\n\nWith:\nbash\n    if [ ! -f \"$source_file\" ]; then\n      echo -e \"${RED}\u274c Source file does not exist: $source_file${NC}\"\n      exit 1\n    fi\n\n\n#### Add Memory-Efficient Processing for Large Files\n\nFor very large files, add a streaming option:\nbash\nprocess_large_file() {\n  local source_file=\"$1\"\n  local chunk_size=\"$2\"\n  local overlap=\"$3\"\n\n\u2026"
+}

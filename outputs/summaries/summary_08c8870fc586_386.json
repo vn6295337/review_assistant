@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_386.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n.txt file.\n- main\n\nMain function: main\n\n\n----------------------------------------\nDriver Script: main.py\n\nDescription:\nMain entry point for the web application.\nInitializes the Flask server, sets up routes, and configures the database.\n\nScript has a __name__ == '__main__' block for direct execution\n\nContains 1 functions\n\n----------------------------------------\nDriver Script: simple_rag_assistant.py\n\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_255.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nroduct_id': self.product_id,\n            'quantity': self.quantity,\n            'price_at_time': self.price_at_time\n        }\n    \n    def __repr__(self) -> str:\n        return f\"<OrderItem {self.id} Product: {self.product_id} Qty: {self.quantity}>\"\nWould you want me to help with:\n\nAdding custom validation methods?\n\nMigration scripts?\n\nOr any specific features for your models?\n\nJust say!\n\nYou said:\nuse local time UTC+5:30\nChatGPT said:\n\n\u2026"
+}

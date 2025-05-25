@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_287.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ns .py,.js,.html,.css,.md,.txt --chunk-size 500 --overlap 50 --verbose\nif [ $? -ne 0 ]; then\n  echo -e \"${RED}Error: File chunking failed!${NC}\"\n  exit 1\nfi\n\nNUM_CHUNKS=$(ls -1 \"$OUT_DIR\"/*.json 2>/dev/null | wc -l)\nif [ \"$NUM_CHUNKS\" -eq 0 ]; then\n  echo -e \"${RED}Error: No chunks were created!${NC}\"\n  exit 1\nfi\necho -e \"${GREEN}Successfully created $NUM_CHUNKS chunks!${NC}\"\n\n# Dependency checks\necho -e \"\\n${YELLOW}Checking Python dependencies...${NC}\"\nfor pkg in numpy sentence_transformers; do\n  python3 -c \"import $pkg\" 2>/dev/null || {\n    echo -e \"${RED}Missing Python package: $pkg${NC}\"\n    echo -e \"Install with: python3 -m pip install $pkg\"\n    exit 1\n\n\u2026"
+}

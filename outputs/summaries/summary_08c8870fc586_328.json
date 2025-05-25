@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_328.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nts/prompts \\\n--title \"<Your Title>\" \\\n--var question=\"\u2026\" --var notes=\"\u2026\" --var conclusion=\"\u2026\"\nWrites outputs/prompts/structured_prompt_<timestamp>.txt\n\n4. Paste into LLM & Iterate\nCopy the generated prompt from outputs/prompts/\n\nPaste into ChatGPT, Claude, Gemini free\u2011tier\n\nRead the AI\u2019s response\n\n4a. (Optional) Export AI\u2019s response\nRerun scripts/export_chat.sh to capture the new chat\n\nIt writes to codebase/chat_sessions/ and can re\u2011chunk & summarize that as in steps 2\u20133\n\n5. Interactive Exploration\nSearch chunks\n\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_19.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"y\" ]; then\n    echo -e \"${BLUE}Enter the path to your source file:${NC}\"\n    read -r source_file\n    \n    if [ ! -f \"$source_file\" ]; then\n      echo -e \"${RED}\u274c Source file does not exist: $source_file${NC}\"\n      exit 1\n    fi\n    \n    echo -e \"${BLUE}Choose chunk size:${NC}\"\n    echo \"1) Small (500 chars) - Better for code or technical content\"\n    echo \"2) Medium (2000 chars) - Good balance for most content\"\n    echo \"3) Large (4000 chars) - Better for narrative text\"\n    read -r chunk_size_option\n    \n    case $chunk_size_option in\n      1) chunk_size=500; overlap=50 ;;\n      2) chunk_size=2000; overlap=200 ;;\n      3) chunk_size=4000; overlap=400 ;;\n      *) chunk_size=2000; overlap=200 ;;  # Default to medium\n\n\u2026"
+}

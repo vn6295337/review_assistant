@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_177.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nh - Full RAG workflow after chat ingestion\n# Usage: ./run_chat.sh \"Chat Title\"\n\nset -e\n\n# === Load configuration ===\nSCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\nsource \"${SCRIPT_DIR}/../config.sh\"\n\n# === Title argument or fallback ===\nTITLE=\"${1:-Chat}\"\n\necho \"\ud83d\ude80 Launching chat ingestion for: $TITLE\"\ncd \"$PYTHON_DIR\"\n\n# === Run chat exporter ===\npython3 chat_exporter.py --title \"$TITLE\"\n\n# === Get the latest exported chat file ===\nCHAT_DIR=\"${RAG_ROOT}/codebase/chat_sessions\"\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_39.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nself.metadata[idx], similarities[idx])\n            for idx in range(len(self.texts))\n        ]\n        \n        # Sort by similarity in descending order\n        results_with_idx.sort(key=lambda x: x[3], reverse=True)\n        \n        # Return top_k results\n        top_results = results_with_idx[:top_k]\n        \n        # Format results as dictionaries\n        results = [\n            {\n                \"text\": text,\n                \"metadata\": metadata,\n                \"similarity\": similarity\n            }\n            for _, text, metadata, similarity in top_results\n        ]\n        \n\n\u2026"
+}

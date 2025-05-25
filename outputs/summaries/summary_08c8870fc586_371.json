@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_371.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nhe latest exported chat file ===\nCHAT_DIR=\"${RAG_ROOT}/codebase/chat_sessions\"\nLATEST_CHAT_FILE=$(ls -t \"$CHAT_DIR\"/*.md \"$CHAT_DIR\"/*.txt \"$CHAT_DIR\"/*.json 2>/dev/null | head -n 1)\n\nif [ ! -f \"$LATEST_CHAT_FILE\" ]; then\n  echo \"\u274c No chat file found. Aborting.\"\n  exit 1\nfi\n\necho \"\u2705 Found latest chat file: $LATEST_CHAT_FILE\"\n\n# === Run chunking ===\necho \"\ud83d\udd2a Chunking chat file...\"\npython3 \"${SCRIPTS_DIR}/file_chunker.py\" --input-file \"$LATEST_CHAT_FILE\"\n\n# === Run summarization ===\necho \"\ud83e\udde0 Summarizing chunks...\"\npython3 \"${SCRIPTS_DIR}/summarizer.py\"\n\n# === Generate final MCP prompt ===\n\n\u2026"
+}

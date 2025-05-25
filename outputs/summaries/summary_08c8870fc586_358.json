@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_358.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ndef read_chat_from_file(filepath):\n    try:\n        with open(filepath, 'r', encoding='utf-8') as f:\n            return f.read()\n    except Exception as e:\n        print(f\"\u274c Failed to read input file: {e}\")\n        return None\n\n\ndef parse_chat(content):\n    patterns = [\n        r\"Human: (.*?)(?=\\nAssistant: |\\Z)\",\n        r\"Assistant: (.*?)(?=\\nHuman: |\\Z)\"\n    ]\n    messages = []\n    human_parts = re.findall(patterns[0], content, re.DOTALL)\n    assistant_parts = re.findall(patterns[1], content, re.DOTALL)\n\n    for i in range(max(len(human_parts), len(assistant_parts))):\n        if i < len(human_parts):\n\n\u2026"
+}

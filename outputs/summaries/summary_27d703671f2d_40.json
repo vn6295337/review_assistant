@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_40.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\name  # Just keep the filename\n                    \n                self.metadata.append({\n                    \"source\": source_file,\n                    \"chunk_id\": chunk_data.get('metadata', {}).get('chunk_id', 'Unknown')\n                })\n                \n            except Exception as e:\n                print(f\"Error loading chunk file {chunk_file}: {e}\")\n                \n        print(f\"Loaded {len(self.chunks)} chunks successfully\")\n        return len(self.chunks) > 0\n    \n    def create_vector_store(self):\n        \"\"\"Create the simple vector store\"\"\"\n        if not self.chunks:\n            print(\"No chunks loaded. Cannot create vector store.\")\n            return False\n            \n        print(f\"Creating vector store for {len(self.chunks)} chunks...\")\n\n\u2026"
+}

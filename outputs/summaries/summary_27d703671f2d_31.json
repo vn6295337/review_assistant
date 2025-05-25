@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_31.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"%T@ %p\\n\" | sort -nr | head -1 | cut -d' ' -f2-)\n\nif [ -n \"$latest_prompt\" ]; then\n  echo \"\"\n  echo -e \"${GREEN}\u2713 Workflow complete! Latest prompt available at:${NC}\"\n  echo \"$latest_prompt\"\n  echo \"\"\n  echo -e \"${BLUE}What would you like to do with this prompt?${NC}\"\n  echo \"1) Display prompt in terminal\"\n  echo \"2) Copy prompt to clipboard (if available)\"\n  echo \"3) Open prompt in text editor (if available)\"\n  echo \"4) Exit\"\n  read -r prompt_action\n  \n  case $prompt_action in\n    1)\n      echo \"\"\n      echo -e \"${BLUE}============== PROMPT CONTENT ================${NC}\"\n      echo \"\"\n      cat \"$latest_prompt\"\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_33.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ndir in \"$PYTHON_DIR\" \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\" \"$PROMPTS_DIR\"; do\n  if [[ ! -d \"$dir\" ]]; then\n    echo -e \"${YELLOW}Creating missing directory:${NC} $dir\"\n    mkdir -p \"$dir\"\n  fi\ndone\n\n# Ensure we have at least a fallback prompt template\nif [[ ! -f \"$DEFAULT_TEMPLATE\" ]]; then\n  echo -e \"${YELLOW}Creating fallback template at:${NC} $DEFAULT_TEMPLATE\"\n  mkdir -p \"$(dirname \"$DEFAULT_TEMPLATE\")\"\n  cat > \"$DEFAULT_TEMPLATE\" <<'EOL'\n# {title}\n\n## Context Information\n{summaries}\n\n## Tasks\n1. High\u2011level overview  \n2. Key insights  \n\n\u2026"
+}

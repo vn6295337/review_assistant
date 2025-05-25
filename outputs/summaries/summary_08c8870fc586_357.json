@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_357.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nng, help messages, titles, and filenames to be neutral.\n\nPreserved functionality: reads from input file, cleans output dir, saves chat and code.\n\n\u2705 Updated Script: chat_exporter.py (Generic Version)\n#!/usr/bin/env python3\n\"\"\"\nGeneric Chat Exporter\n\nThis script exports a chat session (formatted with \"Human:\" and \"Assistant:\") from a text/markdown file into structured formats.\n\nUsage:\npython3 chat_exporter.py --input-file <path> [--output-dir <path>] [--format txt|md|json] [--title \"Session Title\"]\n\"\"\"\n\nimport os\nimport re\nimport json\nimport shutil\nimport datetime\n\n\u2026"
+}

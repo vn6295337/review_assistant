@@ -1,0 +1,29 @@
+{
+  "name": "architecture_analysis",
+  "description": "",
+  "created": "2025-05-15 17:05:05",
+  "contexts": {
+    "entry_points": {
+      "path": "architecture_analysis/contexts/entry_points.txt",
+      "added": "2025-05-15 17:05:56",
+      "size": 19
+    },
+    "db_models": {
+      "path": "architecture_analysis/contexts/db_models.txt",
+      "added": "2025-05-15 17:05:57",
+      "size": 19
+    },
+    "api_endpoints": {
+      "path": "architecture_analysis/contexts/api_endpoints.txt",
+      "added": "2025-05-15 17:05:58",
+      "size": 19
+    }
+  },
+  "prompts": {
+    "main_analysis": {
+      "path": "architecture_analysis/prompts/main_analysis.txt",
+      "added": "2025-05-15 17:05:58",
+      "variables": []
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_252.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n):\n        return {\n            'id': self.id,\n            'user_id': self.user_id,\n            'status': self.status,\n            'total_amount': self.total_amount,\n            'created_at': self.created_at.isoformat(),\n            'items': [item.to_dict() for item in self.items]\n        }\n\nclass OrderItem(db.Model):\n    \"\"\"Order item for linking products to orders.\"\"\"\n    id = db.Column(db.Integer, primary_key=True)\n    order_id = db.Column(db.Integer, db.ForeignKey('order.id'), nullable=False)\n    product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)\n    quantity = db.Column(db.Integer, nullable=False)\n    price_at_time = db.Column(db.Float, nullable=False)  # Price when ordered\n    \n    def to_dict(self):\n        return {\n\n\u2026"
+}

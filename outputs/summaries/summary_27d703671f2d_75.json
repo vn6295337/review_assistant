@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_75.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nour workflow:\n\nIf your project or workflow involves:\n\nManually copying chat logs from Claude's interface (or similar),\n\nNeeding a quick way to export those chats into reusable formats,\n\nPreparing chat data for downstream tools like Retrieval-Augmented Generation (RAG) assistants, or\n\nManaging code snippets separately from chat transcripts,\n\nthen this script is very handy and definitely worth keeping.\n\nIf you are building a pure API/backend or a web app that doesn\u2019t involve manual chat exports,\nor you do not use Claude chat sessions directly,\nthen you might not need this script in your main codebase.\n\nSummary\nUse Case\tKeep chat_exporter.py?\n\n\u2026"
+}

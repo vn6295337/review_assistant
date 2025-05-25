@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_59.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\numn(db.Text)\n    price: float = db.Column(db.Float, nullable=False)\n    stock: int = db.Column(db.Integer, default=0)\n    category: str = db.Column(db.String(50))\n    created_at: datetime = db.Column(db.DateTime, default=datetime.utcnow)\n\n    order_items = db.relationship('OrderItem', backref='product', lazy=True)\n\n    def to_dict(self) -> Dict[str, Any]:\n        return {\n            'id': self.id,\n            'name': self.name,\n            'description': self.description,\n            'price': self.price,\n            'stock': self.stock,\n            'category': self.category\n        }\n    \n    def __repr__(self) -> str:\n        return f\"<Product {self.name} (${self.price})>\"\n\n\u2026"
+}

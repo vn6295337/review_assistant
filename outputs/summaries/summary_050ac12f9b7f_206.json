@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_206.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nstall torch==2.1.2+cpu -f https://download.pytorch.org/whl/torch_stable.html\nIf you're offline, let me know \u2014 I\u2019ll help you install from a wheel instead.\n\n\ud83d\udd0d Verify after reinstalling\nThen run:\n\npython3 -c \"import torch; print(torch.__version__)\"\nIf it prints 2.1.2, you're good.\n\nThen:\n\npython3 -c \"from transformers import pipeline; print(pipeline('summarization', model='t5-small'))\"\nThis should download the t5-small model once, then it will work fully offline.\n\n\u26a1 Bonus Tip (fully offline option)\nIf you're going to stay offline:\n\nDownload t5-small on another machine using:\n\nfrom transformers import pipeline\n\n\u2026"
+}

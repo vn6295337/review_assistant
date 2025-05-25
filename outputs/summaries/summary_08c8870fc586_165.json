@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_165.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nontent:\n        print(\"\u274c No content to parse. Exiting.\")\n        return\n\n    messages = parse_chat(content)\n    if not messages:\n        print(\"\u274c Could not parse any messages. Exiting.\")\n        return\n\n    saved_file = save_chat(messages, args.format, args.output_dir, title)\n    code_files = extract_code_snippets(messages, args.output_dir)\n\n    print(\"\\n\u2705 Export complete!\")\n    print(f\"Chat saved to: {saved_file}\")\n    if code_files:\n        print(f\"{len(code_files)} code snippets extracted to: {os.path.join(args.output_dir, 'code_snippets')}\")\n\n    print(f\"\\nTo continue processing, run:\\npython3 /mnt/chromeos/removable/USB\\\\ Drive/review_assistant/scripts/file_chunker.py --input-file \\\"{saved_file}\\\"\")\n\n\n\n\u2026"
+}

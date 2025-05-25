@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_279.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n= os.path.join(ROOT_DIR, \"chunks\")\nCHUNKS_OUTPUT_DIR = os.path.join(ROOT_DIR, \"outputs/chunks\")\nPROMPTS_DIR = os.path.join(ROOT_DIR, \"outputs/prompts\")\n\ndef print_section_header(title):\n    \"\"\"Print a section header.\"\"\"\n    print(f\"\\n# ================================================================================\")\n    print(f\"{title}\\n\")\n\ndef check_directory(dir_path, required=True):\n    \"\"\"Check if a directory exists and print the result.\"\"\"\n    if os.path.isdir(dir_path):\n        print(f\"\u2713 Directory exists: {dir_path}\")\n        return True\n    else:\n        status = \"\u274c\" if required else \"\u26a0\"\n        print(f\"{status} Directory does not exist: {dir_path}\")\n        return False\n\ndef check_file(file_path, required=True):\n\n\u2026"
+}

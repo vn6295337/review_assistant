@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_175.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"\n          f\"--summaries-dir {SUMMARIES_DIR} --output-dir {os.environ.get('PROMPTS_DIR')}\\n\")\n\n\nif __name__ == \"__main__\":\n    try:\n        main()\n    except RuntimeError as err:\n        print(f\"\u274c {err}\")\n\u2705 Before You Run\nMake sure:\n\nsource config.sh\nThis sets up all the environment variables that chat_exporter.py now depends on.\n\nWould you like a helper script like run_chat.sh to automate all of this in one go?\n\nYou said:\nyes\nChatGPT said:\n\n\u2026"
+}

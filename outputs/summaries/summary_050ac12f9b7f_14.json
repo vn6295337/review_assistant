@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_14.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ninsights to file\n    with open(output_file, 'w') as f:\n        f.write(\"# Extracted Insights\\n\\n\")\n        for idx, insight in enumerate(insights, 1):\n            f.write(f\"{idx}. {insight.strip()}\\n\\n\")\n    \n    return len(insights)\n\n\n### 10. Add Support for External Storage\n\nMake the system work with different USB paths for better portability:\n\nbash\n# Auto-detect USB drive\nfind_usb_drive() {\n  # Try common paths\n  for path in \"/mnt/chromeos/removable\" \"/media\" \"/mnt\"; do\n    if [ -d \"$path\" ]; then\n      # Look for directories that might be a USB drive\n\n\u2026"
+}

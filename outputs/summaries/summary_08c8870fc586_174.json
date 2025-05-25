@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_174.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nle\", type=str, default=\"Chat\",\n                        help=\"Base filename prefix (default: Chat)\")\n    args = parser.parse_args()\n\n    # Ensure directories exist\n    CHAT_SESSIONS_DIR.mkdir(parents=True, exist_ok=True)\n    CHUNKS_DIR.mkdir(parents=True, exist_ok=True)\n    SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)\n\n    # Open blank nano session\n    tmp_file = Path(\"/tmp\") / f\"chat_input_{datetime.datetime.now():%Y%m%d_%H%M%S}.txt\"\n    print(\"\\n\ud83d\udccb Paste chat content into the nano window. Save and exit when done (Ctrl-O, Enter, Ctrl-X).\")\n    if not open_nano(tmp_file):\n        return\n\n    if not is_file_nonempty(tmp_file):\n        print(\"\u274c No content captured. Exiting.\")\n        tmp_file.unlink(missing_ok=True)\n        return\n\n\n\u2026"
+}

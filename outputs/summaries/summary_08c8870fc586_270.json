@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_270.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nAPI/backend or a web app that doesn\u2019t involve manual chat exports,\nor you do not use Claude chat sessions directly,\nthen you might not need this script in your main codebase.\n\nSummary\nUse Case\tKeep chat_exporter.py?\nManual Claude chat exports\tYes, very useful\nAutomated chat handling\tNo, use API/webhooks instead\nPure API backend\tNo, not needed\nRAG tool data prep & code extraction\tYes, good utility script\nWhat to do?\nIf you want to keep it: Store it as a standalone utility script outside your main app modules.\n\nIf not needed: archive it somewhere or delete it to keep your repo clean.\n\nIf you want, I can help you:\n\nAdd command-line help improvements,\n\nMake the code extraction smarter,\n\n\u2026"
+}

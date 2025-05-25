@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_289.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nsistant.py\"\ncheck_dir_exists \"$SRC_DIR\"\n\necho -e \"${YELLOW}Chunking files...${NC}\"\npython3 \"$CORE_DIR/file_chunker.py\" \"$SRC_DIR\" --output \"$OUT_DIR\" --extensions .py,.js,.html,.css,.md,.txt --chunk-size 500 --overlap 50 --verbose\n\nNUM_CHUNKS=$(ls -1 \"$OUT_DIR\"/*.json 2>/dev/null | wc -l)\nif [ \"$NUM_CHUNKS\" -eq 0 ]; then\n  print_error \"No chunks were created!\"\n  exit 1\nfi\necho -e \"${GREEN}Created $NUM_CHUNKS chunks.${NC}\"\n\necho -e \"${YELLOW}Checking Python dependencies...${NC}\"\ncheck_python_packages numpy sentence_transformers\n\necho -e \"${YELLOW}Python environment:${NC}\"\necho \"Python: $(which python3)\"\necho \"Python version: $(python3 --version)\"\n\n\n\u2026"
+}

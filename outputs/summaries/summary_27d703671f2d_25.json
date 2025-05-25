@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_25.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ng.\n\nYou said:\nDo I have to create a config.sh file first?\n# config.sh - Central configuration for RAG Assistant\n\n# Base directories\nexport RAG_ROOT=\"/mnt/chromeos/removable/USB Drive/review_assistant\"\nexport PYTHON_DIR=\"${RAG_ROOT}/python\"\nexport SCRIPTS_DIR=\"${RAG_ROOT}/scripts\"\n\n# Data directories\nexport CHUNKS_DIR=\"${RAG_ROOT}/outputs/chunks\"\nexport SUMMARIES_DIR=\"${RAG_ROOT}/outputs/summaries\"\nexport PROMPTS_DIR=\"${RAG_ROOT}/outputs/prompts\"\nexport MCP_DATA_DIR=\"${RAG_ROOT}/outputs/mcp_data\"\nexport TEMPLATES_DIR=\"${RAG_ROOT}/templates\"\n\n# Default settings\nexport DEFAULT_CHUNK_SIZE=2000\n\n\u2026"
+}

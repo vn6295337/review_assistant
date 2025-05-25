@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_378.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n== Run summarization ===\necho \"\ud83e\udde0 Summarizing chunks...\"\npython3 \"${SCRIPTS_DIR}/summarizer.py\"\n\n# === Generate final MCP prompt ===\necho \"\ud83e\uddfe Generating final MCP prompt...\"\npython3 \"${SCRIPTS_DIR}/mcp_helper.py\"\n\n# === Open final MCP prompt in nano ===\nLATEST_PROMPT_FILE=$(ls -t \"${PROMPTS_DIR}\"/*.md 2>/dev/null | head -n 1)\nif [ -f \"$LATEST_PROMPT_FILE\" ]; then\n  echo \"\ud83d\udcdd Opening final MCP prompt in nano...\"\n  nano \"$LATEST_PROMPT_FILE\"\nelse\n  echo \"\u26a0\ufe0f No MCP prompt found to open.\"\nfi\n\necho \"\u2705 RAG workflow complete.\"\n\n\n\n\u2026"
+}

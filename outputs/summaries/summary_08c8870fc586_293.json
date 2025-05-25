@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_293.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nin/bash\n\n# check_python_env.sh - Script to check Python environment and path settings\n\n# Color output for better readability\nGREEN='\\033[0;32m'\nBLUE='\\033[0;34m'\nRED='\\033[0;31m'\nYELLOW='\\033[0;33m'\nNC='\\033[0m' # No Color\n\necho -e \"${BLUE}==============================================${NC}\"\necho -e \"${BLUE}       Checking Python Environment           ${NC}\"\necho -e \"${BLUE}==============================================${NC}\"\n\n# Check Python version\necho -e \"\\n${YELLOW}Python version:${NC}\"\npython3 --version\n\n# Check Python path\n\n\u2026"
+}

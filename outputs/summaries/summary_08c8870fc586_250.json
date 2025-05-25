@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_250.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\naries:\n        print(\"\u274c No summaries found\")\n        return 1\n    \n    if args.verbose:\n        print(f\"Found {len(summaries)} summaries\")\n        print(f\"Generating prompt with title: {args.title or 'auto-generated'}\")\n    \n    prompt = generate_prompt(template, summaries, args.title)\n    if not prompt:\n        print(\"\u274c Failed to generate prompt\")\n        return 1\n    \n    if args.verbose:\n        print(f\"Saving prompt to: {args.output_dir}\")\n    \n    output_file = save_prompt(prompt, args.output_dir)\n    if not output_file:\n        print(\"\u274c Failed to save prompt\")\n        return 1\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_351.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nmessages.append({\"role\": \"assistant\", \"content\": claude_parts[i].strip()})\n    return messages\n\n\ndef format_as_markdown(messages, title=\"Claude Chat Export\"):\n    now = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    output = f\"# {title}\\n\\n*Exported on: {now}*\\n\\n\"\n    for msg in messages:\n        output += f\"## {msg['role'].capitalize()}\\n\\n{msg['content']}\\n\\n---\\n\\n\"\n    return output\n\n\ndef format_as_text(messages, title=\"Claude Chat Export\"):\n    now = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    output = f\"{title}\\nExported on: {now}\\n\\n\"\n    for msg in messages:\n        output += f\"{msg['role'].capitalize()}:\\n{msg['content']}\\n\\n{'-'*80}\\n\\n\"\n    return output\n\n\n\n\u2026"
+}

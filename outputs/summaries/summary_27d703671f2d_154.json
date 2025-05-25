@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_154.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nternative directory: {alt_dir}\")\n        args.output_dir = alt_dir\n        create_output_directory(args.output_dir)\n    \n    # Get and process chat content\n    content = get_chat_content()\n    if not content:\n        print(\"No content provided. Exiting.\")\n        return\n    \n    messages = parse_chat(content)\n    if not messages:\n        print(\"Could not parse any messages. Exiting.\")\n        return\n    \n    # Save the chat\n    filepath = save_chat(messages, args.format, args.output_dir, title)\n    \n    # Extract code snippets\n    code_files = extract_code_snippets(messages, args.output_dir)\n\n\u2026"
+}

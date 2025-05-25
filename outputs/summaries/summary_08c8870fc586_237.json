@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_237.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nprint(\"Goodbye!\")\n                break\n                \n            if not question:\n                continue\n                \n            start_time = datetime.now()\n            answer = assistant.answer_question(question)\n            end_time = datetime.now()\n            \n            print(\"\\nAnswer:\")\n            print(answer)\n            print(f\"\\n(Response generated in {(end_time - start_time).total_seconds():.2f} seconds)\")\n            \n        except KeyboardInterrupt:\n            print(\"\\nGoodbye!\")\n            break\n        except Exception as e:\n            print(f\"Error: {e}\")\n\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_199.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\noutput_dir (str): Directory to save the summary output\n\n    Returns:\n        bool: True if successful, False otherwise\n    \"\"\"\n    try:\n        os.makedirs(output_dir, exist_ok=True)\n        base_name = os.path.basename(input_file)\n        output_file = os.path.join(output_dir, f\"summary_{base_name}\")\n\n        with open(input_file, 'r', encoding='utf-8') as f:\n            chunk_data = json.load(f)\n\n        content = chunk_data.get('content')\n        if content is None:\n            print(f\"\u26a0 Error: 'content' field missing in {input_file}\")\n            return False\n\n        chunk_id = chunk_data.get('chunk_id', 'unknown')\n        source_file = chunk_data.get('file', 'unknown')\n\n\u2026"
+}

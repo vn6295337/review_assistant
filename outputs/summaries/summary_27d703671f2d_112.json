@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_112.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nMP=$(date +\"%Y%m%d_%H%M%S\")\n  SAFE_TITLE=$(echo \"$CHAT_TITLE\" | tr -cd '[:alnum:] _-' | tr ' ' '_')\n  OUTPUT_FILE=\"$EXPORT_DIR/${SAFE_TITLE}_${TIMESTAMP}.$FORMAT\"\n\n  echo -e \"${CYAN}Processing chat...${NC}\"\n  case \"$FORMAT\" in\n    md)\n      export_markdown \"$TMP_FILE\" \"$OUTPUT_FILE\" \"$CHAT_TITLE\"\n      ;;\n    json)\n      # TODO: Real JSON export parsing here\n      echo \"{\\\"title\\\": \\\"$CHAT_TITLE\\\", \\\"messages\\\": []}\" > \"$OUTPUT_FILE\"\n      ;;\n    txt)\n      {\n        echo \"$CHAT_TITLE\"\n        echo \"Exported on: $(date)\"\n        echo\n        cat \"$TMP_FILE\"\n      } > \"$OUTPUT_FILE\"\n\n\u2026"
+}

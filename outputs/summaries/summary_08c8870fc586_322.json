@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_322.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n${NC}\"\nfi\n\n# Check and install external dependencies\necho \"\"\necho -e \"${BLUE}Checking external dependencies...${NC}\"\nmissing_external=0\nfor pkg in \"${external_packages[@]}\"; do\n  if ! check_package \"$pkg\"; then\n    echo -e \"${YELLOW}Would you like to install $pkg? (y/n)${NC}\"\n    read -r install_choice\n    if [ \"$install_choice\" = \"y\" ]; then\n      install_package \"$pkg\" || missing_external=$((missing_external + 1))\n    else\n      missing_external=$((missing_external + 1))\n    fi\n  fi\ndone\n\n# Optional: Install lightweight alternatives if some packages couldn't be installed\n\n\u2026"
+}

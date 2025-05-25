@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_319.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nesac\n      ;;\n    2)\n      clear\n      echo \"=== Multi-Chunk Prompt Helper ===\"\n      echo \"1) List existing prompts\"\n      echo \"2) Create new prompt\"\n      echo \"3) Add context to existing prompt\"\n      echo \"4) Generate prompt\"\n      echo \"5) Export prompt\"\n      echo \"6) Import prompt\"\n      echo \"7) Show mcp_helper.py help\"\n      echo \"8) Back to main menu\"\n      echo\n      echo \"Enter your choice (1-8):\"\n      read -r PROMPT_CHOICE\n      \n      case $PROMPT_CHOICE in\n        1) clear; list_prompts; echo; echo \"Press any key to continue...\"; read -n 1 ;;\n        2) clear; create_new_prompt; echo; echo \"Press any key to continue...\"; read -n 1 ;;\n\n\u2026"
+}

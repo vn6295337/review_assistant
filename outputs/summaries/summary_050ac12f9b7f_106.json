@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_106.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nsh)\n      # Optimize shell scripts\n      echo \"Optimizing shell script...\"\n      # Remove blank lines and comments\n      sed -i '/^[[:space:]]*$/d; /^[[:space:]]*#[^!]/d' \"$path\"\n      ;;\n    md|txt)\n      # Optimize markdown/text\n      echo \"Optimizing text file...\"\n      # Remove excess blank lines (keep only single blank lines)\n      sed -i '/^$/N;/^\\n$/D' \"$path\"\n      ;;\n    *)\n      echo \"Warning: Unknown file type for optimization. Basic cleanup only.\"\n      sed -i '/^[[:space:]]*$/d' \"$path\"\n      ;;\n  esac\n  \n  # Calculate space savings\n  original_size=$(wc -c < \"${path}.bak\")\n\n\u2026"
+}

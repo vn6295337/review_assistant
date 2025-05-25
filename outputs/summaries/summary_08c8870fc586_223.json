@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_223.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nlow.sh to use this config.sh structure cleanly.\n\nYou said:\nBelow sit is the full_rag_workflow.sh script, refactor it accordingly:\n\n#!/bin/bash\n#\n# Improved Full RAG Workflow Script\n# This script orchestrates the complete RAG workflow for content processing\n#\n\nset -e  # Exit on any error\n\n# Colors for better readability\nGREEN='\\033[0;32m'\nRED='\\033[0;31m'\nYELLOW='\\033[1;33m'\nBLUE='\\033[0;34m'\nNC='\\033[0m' # No Color\n\n\n\u2026"
+}

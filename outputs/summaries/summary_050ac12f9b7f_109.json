@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_109.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"Processing chat...\"\n  if [ \"$FORMAT\" = \"md\" ]; then\n    echo \"# $CHAT_TITLE\" > \"$OUTPUT_FILE\"\n    echo \"*Exported on: $(date)*\" >> \"$OUTPUT_FILE\"\n    awk '{\n      if ($0 ~ /^Human:/) {\n        print \"## Human\\n\"; $1=\"\"; print $0 \"\\n\";\n      } else if ($0 ~ /^Claude:/) {\n        print \"## Claude\\n\"; $1=\"\"; print $0 \"\\n---\\n\";\n      } else {\n        print $0;\n      }\n    }' \"$TMP_FILE\" >> \"$OUTPUT_FILE\"\n  elif [ \"$FORMAT\" = \"json\" ]; then\n    echo \"{\\\"title\\\": \\\"$CHAT_TITLE\\\", \\\"messages\\\": []}\" > \"$OUTPUT_FILE\"\n  else\n    echo \"$CHAT_TITLE\" > \"$OUTPUT_FILE\"\n    echo \"Exported on: $(date)\" >> \"$OUTPUT_FILE\"\n    echo >> \"$OUTPUT_FILE\"\n    cat \"$TMP_FILE\" >> \"$OUTPUT_FILE\"\n\n\u2026"
+}

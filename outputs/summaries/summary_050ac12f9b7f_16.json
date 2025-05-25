@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_16.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nowing query:\n{question}\n\u2705 4. Workflow Improvements\n\u2705 Fix Bug: Replace } with fi in full_rag_workflow.sh\n\n\u2705 Interactive Mode: Add flags like --auto or --manual for non-interactive batch runs\n\n\u2705 Progress Indicators: Use tqdm for chunking/summarization progress\n\n\u2705 5. Session Persistence with Lightweight Metadata\nCreate a JSON file (.session_log.json) to record:\n\nLast file processed\n\nLast chunk ID\n\nAssociated summaries\n\nPrompt file paths\n\n\n\u2026"
+}

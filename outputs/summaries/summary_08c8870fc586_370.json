@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_370.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nChatGPT said:\nHere\u2019s a helper script named run_chat.sh that automates the process for your RAG workflow:\n\n\u2705 run_chat.sh \u2013 Full Script\n#!/bin/bash\n# run_chat.sh - Launch chat ingestion + RAG preprocessing\n# Usage: ./run_chat.sh \"My Chat Title\"\n\nset -e\n\n# === Load environment variables ===\nSCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\nsource \"${SCRIPT_DIR}/../config.sh\"\n\n# === Title from argument or fallback ===\nTITLE=\"${1:-Chat}\"\n\necho \"\ud83d\ude80 Launching chat ingestion for: $TITLE\"\ncd \"$PYTHON_DIR\"\n\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_384.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\ud83d\udcc1 review_assistant_env/\n    \ud83d\udcc1 include/\n      \ud83d\udcc1 python3.11/\n    \ud83d\udcc1 lib/\n      \ud83d\udcc1 python3.11/\n        \ud83d\udcc1 site-packages/\n  \ud83d\udcc1 scripts/\n    \ud83d\udcc4 check_python_env.sh\n    \ud83d\udcc4 config.sh\n    \ud83d\udcc4 debug.sh\n    \ud83d\udcc4 export_chat.sh\n    \ud83d\udcc4 full_rag_workflow.sh\n    \ud83d\udcc4 generate_structured_prompt.sh\n    \ud83d\udcc4 install_dependencies.sh\n    \ud83d\udcc1 mcp_workflows/\n      \ud83d\udcc1 architecture_analysis/\n        \ud83d\udcc4 config.json\n    \ud83d\udcc4 rag_assistant.sh\n    \ud83d\udcc4 rag_helper.sh\n    \ud83d\udcc4 rag_menu.sh\n\n\u2026"
+}

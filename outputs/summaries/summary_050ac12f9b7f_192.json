@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_192.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nag_assistant.py\" --chunks-dir \"$OUT_DIR\"\n- \"$CORE_DIR/file_chunker.py\" \"$SRC_DIR\" --output \"$OUT_DIR\" --extensions .py,.js,.html,.css,.md,.txt --chunk-size 500 --overlap 50 --verbose\n- -c \"import $pkg\" 2>/dev/null\n- -m pip install $pkg\"\n- --version)\" # Launch assistant\n- \"$PY_DIR/rag_assistant.py\" --chunks-dir \"$OUT_DIR\"\n\nEnvironment variables used in the script:\n- GREEN\n- BLUE\n- RED\n- YELLOW\n- NC\n- ROOT\n- CORE_DIR\n- PY_DIR\n- OUT_DIR\n- SRC_DIR\n- NUM_CHUNKS\n\n\n\u2026"
+}

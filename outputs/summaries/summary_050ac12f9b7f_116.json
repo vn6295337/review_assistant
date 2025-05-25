@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_116.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nOT/outputs/prompts/structured_prompt.txt\"\nTEMPLATE=\"$ROOT/templates/structured_prompt_template.md\"\nMCP_HELPER=\"$ROOT/python/mcp_helper.py\"\n\n# === Locate Latest Summary File ===\nLATEST_SUMMARY=$(ls -t \"$SUMMARY_DIR\"/*.json 2>/dev/null | head -n 1)\nif [ -z \"$LATEST_SUMMARY\" ]; then\n  echo \"\u274c No summary file found in $SUMMARY_DIR\"\n  exit 1\nfi\n\n# === Prompt Inputs ===\necho \"Enter prompt title:\"\nread -r TITLE\n\necho \"Enter your main question:\"\nread -r QUESTION\n\necho \"Enter any notes you want to add:\"\nread -r NOTES\n\n\u2026"
+}

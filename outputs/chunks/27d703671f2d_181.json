@@ -1,0 +1,10 @@
+{
+  "content": "ant/scripts/config.sh\" \"/mnt/chromeos/removable/USB Drive/review_assistant/\"\nThen run from scripts folder:\n\n./run_chat.sh \"Chat with CFO\"\nThis is the easiest fix and matches how your script expects it.\n\nOption 2: Modify run_chat.sh to look for config.sh inside scripts\nIn run_chat.sh, find this line:\n\nCONFIG_FILE=\"${SCRIPT_DIR}/../config.sh\"\nand change it to:\n\nCONFIG_FILE=\"${SCRIPT_DIR}/config.sh\"\nThis will make the script source config.sh from the same folder where run_chat.sh lives.\n\nSummary:\nMoving config.sh to root is cleaner for your current script structure.\n\nOr, if you prefer to keep config.sh inside scripts, update the script’s CONFIG_FILE path as shown above.\n\nWould you like me to help you update the run_chat.sh script to fix this?\n\n\n\n\nNo file chosenNo file chosen\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\n",
+  "metadata": {
+    "source": "/mnt/chromeos/removable/USB Drive/review_assistant/codebase/chat_sessions/Chat_with_CFO_20250521_113849.txt",
+    "chunk_id": "27d703671f2d_181",
+    "start_char": 325800,
+    "end_char": 326656,
+    "created_at": "2025-05-21T06:08:51+00:00"
+  }
+}

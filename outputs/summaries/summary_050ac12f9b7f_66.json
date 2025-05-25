@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_66.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nal app reference outside if __name__ == '__main__'.\n\nLet me know if you'd like to add authentication decorators, Swagger docs, or Blueprints next.\n\nYou said:\nhow about test_auth.py? first of, is it really required or its code can be merged into any other existing file?\n\"\"\"\nTests for the authentication module.\n\"\"\"\nimport unittest\nimport jwt\nfrom datetime import datetime, timedelta\nfrom app.auth import create_jwt_token, decode_jwt_token\n\nclass TestAuth(unittest.TestCase):\n    def test_create_jwt_token(self):\n        user_id = 123\n        token = create_jwt_token(user_id)\n        decoded = jwt.decode(token, \"development-secret-key\", algorithms=['HS256'])\n        self.assertEqual(decoded['sub'], user_id)\n\n\u2026"
+}

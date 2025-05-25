@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_298.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nk passed.\"\n  else\n    echo \"\u274c RAG environment check failed with $missing issues.\"\n    return 1\n  fi\n}\n\n# Clean temporary files\nclean_temp_files() {\n  log \"Cleaning temporary files...\"\n  \n  # Always clean these temporary files\n  find \"$ROOT_DIR\" -type f -name \"*.pyc\" -delete\n  find \"$ROOT_DIR\" -type f -name \"*.tmp\" -delete\n  find \"$ROOT_DIR\" -type f -name \"*.temp\" -delete\n  find \"$ROOT_DIR\" -type f -name \"*~\" -delete\n  find \"$ROOT_DIR\" -type d -name \"__pycache__\" -exec rm -rf {} + 2>/dev/null || true\n  \n  echo \"\u2705 Temporary files cleaned.\"\n  \n\n\u2026"
+}

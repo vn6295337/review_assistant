@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_291.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n$dir\"\n  fi\n}\n\nfor dir in \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\" \"$PROMPTS_DIR\" \"$MCP_DATA_DIR\" \"$TEMPLATES_DIR\"; do\n  create_dir_if_missing \"$dir\"\ndone\nParameterize secret key or sensitive data:\n\nInstead of hardcoding SECRET_KEY, allow it to be overridden by an environment variable or an external secrets file for security.\n\nexport SECRET_KEY=\"${SECRET_KEY:-development-secret-key}\"\nOptional: Add a print_config function for debugging\n\nprint_config() {\n  echo \"RAG_ROOT=$RAG_ROOT\"\n  echo \"PYTHON_DIR=$PYTHON_DIR\"\n  echo \"CHUNKS_DIR=$CHUNKS_DIR\"\n  echo \"DEFAULT_CHUNK_SIZE=$DEFAULT_CHUNK_SIZE\"\n  # ...etc.\n\n\u2026"
+}

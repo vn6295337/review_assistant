@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_235.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nccessfully\")\n        return len(self.chunks) > 0\n    \n    def create_vector_store(self):\n        \"\"\"Create the simple vector store\"\"\"\n        if not self.chunks:\n            print(\"No chunks loaded. Cannot create vector store.\")\n            return False\n            \n        print(f\"Creating vector store for {len(self.chunks)} chunks...\")\n        try:\n            self.vector_store = SimpleVectorStore(self.chunks, self.metadata)\n            print(\"Vector store created successfully\")\n            return True\n        except Exception as e:\n            print(f\"Error creating vector store: {e}\")\n            return False\n            \n    def setup(self):\n        \"\"\"Complete setup process\"\"\"\n\n\u2026"
+}

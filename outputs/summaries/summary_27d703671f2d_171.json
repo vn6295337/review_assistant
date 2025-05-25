@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_171.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n_exporter.py, chmod +x if needed, and run:\n\npython3 python/chat_exporter.py --title \"Support_Log\"\nPaste, save, and you\u2019re off to the races!\n\nYou said:\nmake chages to the config.sh file accordingly... and update chat_exporter.py\nlatest config.sh code given below for reference:\n\n#!/bin/bash\n# config.sh - Central configuration for RAG Assistant\n\n# === Base directories ===\nexport RAG_ROOT=\"/mnt/chromeos/removable/USB Drive/review_assistant\"\nexport PYTHON_DIR=\"${RAG_ROOT}/python\"\nexport SCRIPTS_DIR=\"${RAG_ROOT}/scripts\"\nexport TEMPLATES_DIR=\"${RAG_ROOT}/templates\"\nexport OUTPUTS_DIR=\"${RAG_ROOT}/outputs\"\n\n# === Output subdirectories ===\n\n\u2026"
+}

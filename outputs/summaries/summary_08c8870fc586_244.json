@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_244.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ntype=int, default=5, help=\"Number of results\")\n    args = ap.parse_args()\n\n    dir_path = Path(args.chunks_dir)\n    if not dir_path.is_dir():\n        print(f\"\u274c {dir_path} not found\"); return\n    chunks = load_chunks(dir_path)\n    if not chunks:\n        print(\"\u274c No chunks found.\"); return\n\n    print(\"\ud83d\udce1 Loading SBERT model\u2026\")\n    from sentence_transformers import SentenceTransformer\n    model = SentenceTransformer(\"all-MiniLM-L6-v2\")\n\n    chunks = build_embeddings(chunks, model)\n    interactive(chunks, model, args.top_k)\n\nif __name__ == \"__main__\":\n    main()\nHow these changes help\n\n\u2026"
+}

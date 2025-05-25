@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_284.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n') as file:\n            return file.read()\n    except Exception as e:\n        print(f\"Error reading file {file_path}: {e}\")\n        return \"\"\n\ndef process_template(template_path, output_path, context_vars):\n    template_content = read_file(template_path)\n    \n    # Process each context variable\n    for var_name, file_path in context_vars.items():\n        file_content = read_file(file_path)\n        # Replace {{var_name}} with file_content\n        template_content = template_content.replace(f\"{{{{{var_name}}}}}\", file_content)\n    \n    # Write to output file\n    try:\n        os.makedirs(os.path.dirname(output_path), exist_ok=True)\n        with open(output_path, 'w') as file:\n            file.write(template_content)\n\n\u2026"
+}

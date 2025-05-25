@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_233.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nin common_terms)\n        \n        # Calculate magnitudes\n        mag1 = math.sqrt(sum(val * val for val in vec1.values()))\n        mag2 = math.sqrt(sum(val * val for val in vec2.values()))\n        \n        # Calculate cosine similarity (avoid division by zero)\n        if mag1 * mag2 == 0:\n            return 0\n        return dot_product / (mag1 * mag2)\n\nclass SimpleVectorStore:\n    \"\"\"Simple vector store using the SimpleVectorizer\"\"\"\n    \n    def __init__(self, texts, metadata=None):\n        self.vectorizer = SimpleVectorizer()\n        self.texts = texts\n        self.metadata = metadata if metadata else [{}] * len(texts)\n        \n        # Process all texts\n\n\u2026"
+}

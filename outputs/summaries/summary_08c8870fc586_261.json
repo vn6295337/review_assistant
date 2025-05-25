@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_261.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nt_token\n\nclass TestAuth(unittest.TestCase):\n    def test_create_jwt_token(self):\n        user_id = 123\n        token = create_jwt_token(user_id)\n        decoded = jwt.decode(token, \"development-secret-key\", algorithms=['HS256'])\n        self.assertEqual(decoded['sub'], user_id)\n        self.assertTrue(datetime.fromtimestamp(decoded['exp']) > datetime.utcnow())\n\n    def test_decode_jwt_token(self):\n        user_id = 456\n        token = create_jwt_token(user_id)\n        payload = decode_jwt_token(token)\n        self.assertIsNotNone(payload)\n        self.assertEqual(payload['sub'], user_id)\n\n        # expired token\n        expired = jwt.encode(\n            {\n\n\u2026"
+}

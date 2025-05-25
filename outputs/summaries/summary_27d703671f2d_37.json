@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_37.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ndef tokenize(self, text):\n        \"\"\"Convert text to lowercase and split into tokens\"\"\"\n        # Remove special characters and convert to lowercase\n        text = re.sub(r'[^\\w\\s]', ' ', text.lower())\n        # Split into tokens and filter out stop words\n        tokens = [word for word in text.split() if word not in self.stop_words and len(word) > 1]\n        return tokens\n    \n    def get_term_frequency(self, text):\n        \"\"\"Calculate term frequency for a text\"\"\"\n        tokens = self.tokenize(text)\n        term_freq = {}\n        \n        # Count term frequencies\n        for token in tokens:\n            if token in term_freq:\n                term_freq[token] += 1\n            else:\n                term_freq[token] = 1\n        \n\n\u2026"
+}

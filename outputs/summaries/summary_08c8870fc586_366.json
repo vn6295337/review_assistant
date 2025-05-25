@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_366.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nssistant\"\nexport PYTHON_DIR=\"${RAG_ROOT}/python\"\nexport SCRIPTS_DIR=\"${RAG_ROOT}/scripts\"\nexport TEMPLATES_DIR=\"${RAG_ROOT}/templates\"\nexport OUTPUTS_DIR=\"${RAG_ROOT}/outputs\"\n\n# === Output subdirectories ===\nexport CHUNKS_DIR=\"${OUTPUTS_DIR}/chunks\"\nexport SUMMARIES_DIR=\"${OUTPUTS_DIR}/summaries\"\nexport PROMPTS_DIR=\"${OUTPUTS_DIR}/prompts\"\nexport MCP_DATA_DIR=\"${OUTPUTS_DIR}/mcp_data\"\n\n# === Default settings ===\nexport DEFAULT_CHUNK_SIZE=2000\nexport DEFAULT_OVERLAP=200\nexport DEFAULT_TEMPLATE=\"${TEMPLATES_DIR}/summary_prompt_template.md\"\n\n# === Secret key for auth.py ===\nexport SECRET_KEY=\"${SECRET_KEY:-development-secret-key}\"\n\n\n\u2026"
+}

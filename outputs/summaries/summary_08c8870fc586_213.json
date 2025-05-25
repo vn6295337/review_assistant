@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_213.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nROOT_DIR\" \"$PYTHON_DIR\" \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\" \"$PROMPTS_DIR\"; do\n  if [ ! -d \"$dir\" ]; then\n    echo -e \"${RED}\u274c Directory does not exist: $dir${NC}\"\n    echo -e \"${YELLOW}Creating directory: $dir${NC}\"\n    mkdir -p \"$dir\"\n  fi\ndone\n\n# Check if template file exists\nif [ ! -f \"$TEMPLATE_FILE\" ]; then\n  echo -e \"${RED}\u274c Template file does not exist: $TEMPLATE_FILE${NC}\"\n  echo -e \"${YELLOW}Creating a basic template...${NC}\"\n  \n  # Create a basic template\n  mkdir -p \"$(dirname \"$TEMPLATE_FILE\")\"\n  cat > \"$TEMPLATE_FILE\" << 'EOL'\n# {title}\n\n## Context Information\n\n\n\u2026"
+}

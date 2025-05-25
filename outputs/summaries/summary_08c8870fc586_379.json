@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_379.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\ncho \"PYTHON_DIR       = $PYTHON_DIR\"\n  echo \"SCRIPTS_DIR      = $SCRIPTS_DIR\"\n  echo \"TEMPLATES_DIR    = $TEMPLATES_DIR\"\n  echo \"OUTPUTS_DIR      = $OUTPUTS_DIR\"\n  echo\n  echo \"CHUNKS_DIR       = $CHUNKS_DIR\"\n  echo \"SUMMARIES_DIR    = $SUMMARIES_DIR\"\n  echo \"PROMPTS_DIR      = $PROMPTS_DIR\"\n  echo \"MCP_DATA_DIR     = $MCP_DATA_DIR\"\n  echo\n  echo \"DEFAULT_CHUNK_SIZE= $DEFAULT_CHUNK_SIZE\"\n  echo \"DEFAULT_OVERLAP  = $DEFAULT_OVERLAP\"\n  echo \"DEFAULT_TEMPLATE = $DEFAULT_TEMPLATE\"\n  echo\n  echo \"SECRET_KEY       = $SECRET_KEY\"\n  echo \"-----------------------------\"\n}\n\nRAG ASSISTANT SYSTEM ANALYSIS REPORT\nGenerated on: Wed May 21 11:46:45 AM IST 2025\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_355.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nurn md\n\n\ndef format_as_text(messages, title):\n    now = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    txt = f\"{title}\\nExported on: {now}\\n\\n\"\n    for msg in messages:\n        txt += f\"{msg['role'].capitalize()}:\\n{msg['content']}\\n\\n{'-'*80}\\n\\n\"\n    return txt\n\n\ndef save_chat(messages, output_format, output_dir, title):\n    safe_title = re.sub(r'[^\\w\\s-]', '', title).strip().replace(' ', '_')\n    timestamp = datetime.datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n    filename = f\"{safe_title}_{timestamp}\"\n\n    filepath = os.path.join(output_dir, f\"{filename}.{output_format}\")\n\n    with open(filepath, 'w', encoding='utf-8') as f:\n        if output_format == 'json':\n\n\u2026"
+}

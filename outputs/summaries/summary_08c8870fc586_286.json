@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_286.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nneed to refactor rag_assistant.sh? below is the script\n#!/bin/bash\n\n# rag_assistant.sh \u2014 Main entry point for RAG codebase assistant\n# Usage:\n#   ./scripts/rag_assistant.sh          # full mode\n#   ./scripts/rag_assistant.sh --simple # simple mode\n\n# Color codes\nGREEN='\\033[0;32m'\nBLUE='\\033[0;34m'\nRED='\\033[0;31m'\nYELLOW='\\033[0;33m'\nNC='\\033[0m' # No Color\n\n# Locate project root (one level above this script)\nROOT=\"$(cd \"$(dirname \"$0\")/..\" && pwd)\"\nCORE_DIR=\"$ROOT/python\"\nPY_DIR=\"$ROOT/python\"\nOUT_DIR=\"$ROOT/outputs/chunks\"\n\n\u2026"
+}

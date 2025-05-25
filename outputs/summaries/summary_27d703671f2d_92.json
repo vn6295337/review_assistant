@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_92.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nthen\n  echo -e \"${RED}Error: rag_assistant.py not found in $PY_DIR${NC}\"\n  exit 1\nfi\n\n# Check codebase dir\nif [ ! -d \"$SRC_DIR\" ]; then\n  echo -e \"${RED}Error: Codebase directory $SRC_DIR does not exist!${NC}\"\n  echo -e \"Please create it and add your files.\"\n  exit 1\nfi\n\n# Chunk the source files\necho -e \"\\n${YELLOW}Chunking files in $SRC_DIR...${NC}\"\npython3 \"$CORE_DIR/file_chunker.py\" \"$SRC_DIR\" --output \"$OUT_DIR\" --extensions .py,.js,.html,.css,.md,.txt --chunk-size 500 --overlap 50 --verbose\nif [ $? -ne 0 ]; then\n  echo -e \"${RED}Error: File chunking failed!${NC}\"\n  exit 1\nfi\n\n\n\u2026"
+}

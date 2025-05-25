@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_260.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n: \"Welcome to the API\"})\n\n@app.route('/login', methods=['POST'])\ndef login():\n    \"\"\"Handle user login and return JWT token.\"\"\"\n    data = request.get_json()\n    username = data.get('username')\n    password = data.get('password')\n    \n    user = authenticate_user(username, password)\n    if not user:\n        return jsonify({\"error\": \"Invalid credentials\"}), 401\n    \n    token = create_jwt_token(user.id)\n    return jsonify({\"token\": token, \"user_id\": user.id})\n\n@app.route('/products', methods=['GET'])\ndef get_products():\n    \"\"\"Return list of all products.\"\"\"\n    products = Product.query.all()\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_74.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nreturn code_files\n\ndef main():\n    args = parse_args()\n    \n    # Get chat title if not provided\n    title = args.title\n    if not title:\n        title = input(\"Enter a title for this chat export (or press Enter for default): \")\n        if not title:\n            title = \"Claude Chat Export\"\n    \n    # Create output directory\n    if not create_output_directory(args.output_dir):\n        alt_dir = os.path.expanduser(\"~/Downloads\")\n        print(f\"Using alternative directory: {alt_dir}\")\n        args.output_dir = alt_dir\n        create_output_directory(args.output_dir)\n    \n    # Get and process chat content\n\n\u2026"
+}

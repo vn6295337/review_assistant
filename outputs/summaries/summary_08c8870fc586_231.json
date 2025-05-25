@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_231.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nhon:\n1. simple_rag_assistant.py:\n#!/usr/bin/env python3\n\nimport os\nimport glob\nimport json\nimport argparse\nimport sys\nimport math\nimport re\nfrom pathlib import Path\nfrom datetime import datetime\nimport readline  # For better command line input handling\n\nclass SimpleVectorizer:\n    \"\"\"A simple text vectorizer that doesn't require external libraries\"\"\"\n    \n    def __init__(self):\n        # Common English stop words to ignore\n\n\u2026"
+}

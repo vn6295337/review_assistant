@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_204.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nredundancy and overlap in your shell scripts. Consider consolidating:\n\nbash\n#!/bin/bash\n# rag.sh - Unified RAG Assistant Interface\n\n# Usage information\nshow_usage() {\n  echo \"RAG Assistant - Local file-based RAG pipeline\"\n  echo \"Usage: rag.sh [COMMAND] [OPTIONS]\"\n  echo \"\"\n  echo \"Commands:\"\n  echo \"  workflow    Run the full RAG workflow\"\n  echo \"  search      Search through chunks\"\n  echo \"  menu        Open interactive menu\"\n  echo \"  helper      Access helper utilities\"\n  echo \"  check       Check environment\"\n  echo \"  help        Show this help message\"\n}\n\n\n\u2026"
+}

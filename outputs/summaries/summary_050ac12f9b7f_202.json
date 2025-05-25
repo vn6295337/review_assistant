@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_202.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nrror: 'content' field missing in {input_file}\")\n            return False\n\n        chunk_id = chunk_data.get('chunk_id', 'unknown')\n        source_file = chunk_data.get('file', 'unknown')\n\n        # Summarize\n        summary_text = summarize_text(content)\n\n        summary_data = {\n            \"source_file\": input_file,\n            \"chunk_id\": chunk_id,\n            \"summary\": summary_text\n        }\n\n        with open(output_file, 'w', encoding='utf-8') as f:\n            json.dump(summary_data, f, indent=2)\n\n        print(f\"\u2713 Summary created: {output_file}\")\n        return True\n\n\u2026"
+}

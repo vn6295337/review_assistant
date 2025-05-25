@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_345.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\no a text file\nthat can be processed by the RAG assistant tools.\n\nUsage:\n1. Copy this entire script\n2. Save it to your Chromebook\n3. Run it with Python 3\n4. Follow the prompts to copy-paste the chat content\n\"\"\"\n\nimport os\nimport re\nimport json\nimport datetime\nimport argparse\nfrom pathlib import Path\n\ndef parse_args():\n    \"\"\"Parse command line arguments.\"\"\"\n    parser = argparse.ArgumentParser(description='Export Claude chat to text file')\n\n\u2026"
+}

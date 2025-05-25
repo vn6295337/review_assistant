@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_123.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n$CHUNK_PATH\" --dir \"$MCP_DATA_DIR\"\n}\n\ngenerate_prompt() {\n  echo \"First, let's list your available prompts:\"\n  list_prompts\n  \n  echo\n  echo \"Enter the name of the prompt to generate:\"\n  read -r PROMPT_NAME\n  \n  if [ -z \"$PROMPT_NAME\" ]; then\n    echo \"Error: Prompt name cannot be empty\"\n    return\n  fi\n  \n  cd \"$SCRIPTS_DIR\" || { echo \"Error: Scripts directory not found\"; return; }\n  python3 mcp_helper.py generate \"$PROMPT_NAME\" --dir \"$MCP_DATA_DIR\" --output \"$PROMPTS_DIR\"\n}\n\n\n\u2026"
+}

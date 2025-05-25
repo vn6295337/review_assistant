@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_314.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"./codebase\"\n\n# Check main scripts\necho \"--- Checking main scripts ---\"\ncheck_file \"./rag_assistant.sh\"\ncheck_file \"./scripts/file_chunker.py\"\ncheck_file \"./scripts/file_summarizer.py\"\ncheck_file \"./scripts/chunk_searcher.py\"\ncheck_file \"./scripts/mcp_helper.py\"\n\n# Check for template files\necho \"--- Checking template files ---\"\ncheck_file \"./prompts/code_understanding_template.md\"\ncheck_file \"./prompts/architecture_template.md\"\n\n# Search for Python files in the codebase\necho \"--- Looking for Python files in your codebase ---\"\nfind . -name \"*.py\" -not -path \"*/\\.*\" -not -path \"*/scripts/*\" -not -path \"*/venv/*\" | while read -r file; do\n    echo \"Found Python file: $file\"\n    echo \"File size: $(du -h \"$file\" | cut -f1)\"\n\n\u2026"
+}

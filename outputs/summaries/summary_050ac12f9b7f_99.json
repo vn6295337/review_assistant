@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_99.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nce_transformers: \"\nif python3 -c \"import sentence_transformers; print('OK')\" 2>/dev/null; then\n    echo -e \"${GREEN}Available${NC}\"\nelse\n    echo -e \"${RED}Not available${NC}\"\nfi\n\n# Check if we can run a simple numpy operation\necho -e \"\\n${YELLOW}Testing numpy functionality:${NC}\"\npython3 -c \"\ntry:\n    import numpy as np\n    arr = np.array([1, 2, 3])\n    print(f'Created array: {arr}')\n    print('Numpy is working correctly')\nexcept Exception as e:\n    print(f'Error with numpy: {e}')\n\"\n\necho -e \"\\n${BLUE}==============================================${NC}\"\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_121.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"*/venv/*\" | while read -r f; do\n  echo -e \"${CYAN}\u2022${NC} $f ($(du -h \"$f\" | cut -f1))\"\ndone\necho\n\necho -e \"${YELLOW}-- Inspecting rag_assistant.sh variables --${NC}\"\nif [[ -f \"$SCRIPTS_DIR/rag_assistant.sh\" ]]; then\n  grep -E '^[A-Z_]+=.+' \"$SCRIPTS_DIR/rag_assistant.sh\" || true\n  echo\n  echo \"Chunker invocation:\"\n  grep -n \"file_chunker.py\" \"$SCRIPTS_DIR/rag_assistant.sh\" -m3 || true\nelse\n  echo -e \"${RED}\u2716 rag_assistant.sh not found to inspect.${NC}\"\nfi\necho\n\necho -e \"${GREEN}=== Debug complete ===${NC}\"\nWhat changed:\n\nSourcing your config.sh for all path variables.\n\n\u2026"
+}

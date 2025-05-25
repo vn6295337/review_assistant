@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_245.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nint verbose output\n        \n    Returns:\n        int: Number of chunks created or -1 if error\n    \"\"\"\n    try:\n        # Ensure output directory exists\n        os.makedirs(output_dir, exist_ok=True)\n        \n        # Read the file content\n        with open(input_file, 'r', encoding='utf-8', errors='replace') as f:\n            content = f.read()\n            \n        if verbose:\n            print(f\"Read {len(content)} characters from {input_file}\")\n        \n        # Calculate file hash for chunk ID prefixes\n        file_hash = hashlib.md5(input_file.encode('utf-8')).hexdigest()\n        \n        # Break the content into chunks\n\n\u2026"
+}

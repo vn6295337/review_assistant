@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_133.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nries in outputs/summaries/\n\n3. Generate Structured Prompt\n# Still in full_rag_workflow.sh or via generated_structured_prompt.sh\nbash generated_structured_prompt.sh\nFinds the latest summary JSON in outputs/summaries/\n\nPrompts you for:\n\nTitle, Main Question, Notes, Conclusion\n\nInvokes python/python mcp_helper.py with:\n\n--summaries-dir outputs/summaries \\\n--template-file templates/structured_prompt_template.md \\\n--output-dir outputs/prompts \\\n--title \"<Your Title>\" \\\n--var question=\"\u2026\" --var notes=\"\u2026\" --var conclusion=\"\u2026\"\nWrites outputs/prompts/structured_prompt_<timestamp>.txt\n\n\n\u2026"
+}

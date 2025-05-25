@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_64.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nn has expired\n    except jwt.InvalidTokenError:\n        return None  # Invalid token\n\ndef token_required(f):\n    \"\"\"Decorator to protect routes that require authentication.\"\"\"\n    def decorated_function(*args, **kwargs):\n        from flask import request, jsonify\n        token = None\n        \n        if 'Authorization' in request.headers:\n            auth_header = request.headers['Authorization']\n            if auth_header.startswith('Bearer '):\n                token = auth_header[7:]  # Remove 'Bearer ' prefix\n        \n        if not token:\n            return jsonify({'error': 'Token is missing'}), 401\n            \n        payload = decode_jwt_token(token)\n        if not payload:\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_69.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nich matches your production setup (via config.sh).\n\nFully isolated \u2013 Each test sets its own SECRET_KEY via @patch.dict, making them safe and reproducible.\n\nCovers more edge cases \u2013 It also checks behavior for invalid tokens (invalid.token.string).\n\nClean migration \u2013 It keeps your current logic but adds better test hygiene and environment mocking.\n\n\ud83d\udd04 So yes \u2014 do this:\nReplace your entire test_auth.py content with:\n\nimport unittest\nimport jwt\nfrom datetime import datetime, timedelta\nfrom unittest.mock import patch\nfrom app.auth import create_jwt_token, decode_jwt_token\n\nclass TestAuth(unittest.TestCase):\n\n    @patch.dict('os.environ', {'SECRET_KEY': 'test-secret'})\n\n\u2026"
+}

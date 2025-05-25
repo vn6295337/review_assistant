@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_258.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nUser\n\n# Secret key for JWT encoding/decoding\nSECRET_KEY = \"development-secret-key\"  # Should be in environment variables in production\n\ndef authenticate_user(username, password):\n    \"\"\"\n    Verify username and password.\n    \n    Args:\n        username: User's username\n        password: User's password\n        \n    Returns:\n        User object if authentication successful, None otherwise\n    \"\"\"\n    user = User.query.filter_by(username=username).first()\n    if user and check_password_hash(user.password_hash, password):\n        return user\n    return None\n\n\u2026"
+}

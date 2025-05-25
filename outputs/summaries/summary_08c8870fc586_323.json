@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_323.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nendencies.sh (renamed for brevity), which:\n\nUses strict mode (set -euo pipefail).\n\nSources your config.sh for any path needs (if ever).\n\nOrganizes logic into functions.\n\nUses arrays for dependencies.\n\nHandles yes/no prompts with a helper.\n\nAdds colorized output and clear summary at the end.\n\nOmits checks for standard\u2011library packages (they\u2019re always available).\n\n#!/usr/bin/env bash\nset -euo pipefail\n\n# \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n\u2026"
+}

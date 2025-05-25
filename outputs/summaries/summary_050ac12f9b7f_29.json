@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_29.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nexist: $TEMPLATE_FILE${NC}\"\n  echo -e \"${YELLOW}Creating a basic template...${NC}\"\n  \n  # Create a basic template\n  mkdir -p \"$(dirname \"$TEMPLATE_FILE\")\"\n  cat > \"$TEMPLATE_FILE\" << 'EOL'\n# {title}\n\n## Context Information\n\nThis analysis is based on the following context information:\n\n{summaries}\n\n## Questions\n\nBased on the information above, please provide:\n\n1. A high-level overview of this content\n2. Key insights from the material\n\n\u2026"
+}

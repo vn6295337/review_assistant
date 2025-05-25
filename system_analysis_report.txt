@@ -1,0 +1,523 @@
+RAG ASSISTANT SYSTEM ANALYSIS REPORT
+Generated on: Wed May 21 11:46:45 AM IST 2025
+
+================================================================================
+FOLDER STRUCTURE
+================================================================================
+
+Directory structure of: /mnt/chromeos/removable/USB Drive/review_assistant
+
+📁 review_assistant/
+  📁 backups/
+    📄 debug_rag_workflow_backup1.py
+    📄 debug_rag_workflow_backup2.py
+    📄 file_chunker_backup1.py
+    📄 file_chunker_backup2.py
+    📄 file_summarizer_backup1.py
+    📄 file_summarizer_backup2.py
+    📄 full_rag_workflow_backup1.sh
+    📄 full_rag_workflow_backup2.sh
+    📄 full_rag_workflow_backup3.sh
+    📄 install_dependencies_backup.sh
+    📄 mcp_helper_backup1.py
+    📄 mcp_helper_backup2.py
+    📄 mcp_helper_backup3.py
+    📄 summary_prompt_template_backup1.md
+    📄 summary_prompt_template_backup2.md
+    📄 summary_prompt_template_backup3.md
+  📁 chunks/
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_0.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_1.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_10.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_11.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_12.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_13.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_14.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_2.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_3.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_4.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_5.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_6.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_7.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_8.json
+    📄 2655316cf6e30aae5d99bd8b79fa10b1_9.json
+  📄 cleanup_script.py
+  📁 codebase/
+    📁 chat_sessions/
+      📄 Chat_Export_20250521_104434.md
+      📄 Chat_with_CFO_20250521_113849.txt
+      📁 code_snippets/
+    📄 text.txt
+  📁 docs/
+  📁 outputs/
+    📁 chunks/
+      📄 27d703671f2d_0.json
+      📄 27d703671f2d_1.json
+      📄 27d703671f2d_10.json
+      📄 27d703671f2d_100.json
+      📄 27d703671f2d_101.json
+      📄 27d703671f2d_102.json
+      📄 27d703671f2d_103.json
+      📄 27d703671f2d_104.json
+      📄 27d703671f2d_105.json
+      📄 27d703671f2d_106.json
+      📄 27d703671f2d_107.json
+      📄 27d703671f2d_108.json
+      📄 27d703671f2d_109.json
+      📄 27d703671f2d_11.json
+      📄 27d703671f2d_110.json
+      📄 27d703671f2d_111.json
+      📄 27d703671f2d_112.json
+      📄 27d703671f2d_113.json
+      📄 27d703671f2d_114.json
+      📄 27d703671f2d_115.json
+      📄 27d703671f2d_116.json
+      📄 27d703671f2d_117.json
+      📄 27d703671f2d_118.json
+      📄 27d703671f2d_119.json
+      📄 27d703671f2d_12.json
+      📄 27d703671f2d_120.json
+      📄 27d703671f2d_121.json
+      📄 27d703671f2d_122.json
+      📄 27d703671f2d_123.json
+      📄 27d703671f2d_124.json
+      📄 27d703671f2d_125.json
+      📄 27d703671f2d_126.json
+      📄 27d703671f2d_127.json
+      📄 27d703671f2d_128.json
+      📄 27d703671f2d_129.json
+      📄 27d703671f2d_13.json
+      📄 27d703671f2d_130.json
+      📄 27d703671f2d_131.json
+      📄 27d703671f2d_132.json
+      📄 27d703671f2d_133.json
+      📄 27d703671f2d_134.json
+      📄 27d703671f2d_135.json
+      📄 27d703671f2d_136.json
+      📄 27d703671f2d_137.json
+      📄 27d703671f2d_138.json
+      📄 27d703671f2d_139.json
+      📄 27d703671f2d_14.json
+      📄 27d703671f2d_140.json
+      📄 27d703671f2d_141.json
+      📄 27d703671f2d_142.json
+      📄 27d703671f2d_143.json
+      📄 27d703671f2d_144.json
+      📄 27d703671f2d_145.json
+      📄 27d703671f2d_146.json
+      📄 27d703671f2d_147.json
+      📄 27d703671f2d_148.json
+      📄 27d703671f2d_149.json
+      📄 27d703671f2d_15.json
+      📄 27d703671f2d_150.json
+      📄 27d703671f2d_151.json
+      📄 27d703671f2d_152.json
+      📄 27d703671f2d_153.json
+      📄 27d703671f2d_154.json
+      📄 27d703671f2d_155.json
+      📄 27d703671f2d_156.json
+      📄 27d703671f2d_157.json
+      📄 27d703671f2d_158.json
+      📄 27d703671f2d_159.json
+      📄 27d703671f2d_16.json
+      📄 27d703671f2d_160.json
+      📄 27d703671f2d_161.json
+      📄 27d703671f2d_162.json
+      📄 27d703671f2d_163.json
+      📄 27d703671f2d_164.json
+      📄 27d703671f2d_165.json
+      📄 27d703671f2d_166.json
+      📄 27d703671f2d_167.json
+      📄 27d703671f2d_168.json
+      📄 27d703671f2d_169.json
+      📄 27d703671f2d_17.json
+      📄 27d703671f2d_170.json
+      📄 27d703671f2d_171.json
+      📄 27d703671f2d_172.json
+      📄 27d703671f2d_173.json
+      📄 27d703671f2d_174.json
+      📄 27d703671f2d_175.json
+      📄 27d703671f2d_176.json
+      📄 27d703671f2d_177.json
+      📄 27d703671f2d_178.json
+      📄 27d703671f2d_179.json
+      📄 27d703671f2d_18.json
+      📄 27d703671f2d_180.json
+      📄 27d703671f2d_181.json
+      📄 27d703671f2d_19.json
+      📄 27d703671f2d_2.json
+      📄 27d703671f2d_20.json
+      📄 27d703671f2d_21.json
+      📄 27d703671f2d_22.json
+      📄 27d703671f2d_23.json
+      📄 27d703671f2d_24.json
+      📄 27d703671f2d_25.json
+      📄 27d703671f2d_26.json
+      📄 27d703671f2d_27.json
+      📄 27d703671f2d_28.json
+      📄 27d703671f2d_29.json
+      📄 27d703671f2d_3.json
+      📄 27d703671f2d_30.json
+      📄 27d703671f2d_31.json
+      📄 27d703671f2d_32.json
+      📄 27d703671f2d_33.json
+      📄 27d703671f2d_34.json
+      📄 27d703671f2d_35.json
+      📄 27d703671f2d_36.json
+      📄 27d703671f2d_37.json
+      📄 27d703671f2d_38.json
+      📄 27d703671f2d_39.json
+      📄 27d703671f2d_4.json
+      📄 27d703671f2d_40.json
+      📄 27d703671f2d_41.json
+      📄 27d703671f2d_42.json
+      📄 27d703671f2d_43.json
+      📄 27d703671f2d_44.json
+      📄 27d703671f2d_45.json
+      📄 27d703671f2d_46.json
+      📄 27d703671f2d_47.json
+      📄 27d703671f2d_48.json
+      📄 27d703671f2d_49.json
+      📄 27d703671f2d_5.json
+      📄 27d703671f2d_50.json
+      📄 27d703671f2d_51.json
+      📄 27d703671f2d_52.json
+      📄 27d703671f2d_53.json
+      📄 27d703671f2d_54.json
+      📄 27d703671f2d_55.json
+      📄 27d703671f2d_56.json
+      📄 27d703671f2d_57.json
+      📄 27d703671f2d_58.json
+      📄 27d703671f2d_59.json
+      📄 27d703671f2d_6.json
+      📄 27d703671f2d_60.json
+      📄 27d703671f2d_61.json
+      📄 27d703671f2d_62.json
+      📄 27d703671f2d_63.json
+      📄 27d703671f2d_64.json
+      📄 27d703671f2d_65.json
+      📄 27d703671f2d_66.json
+      📄 27d703671f2d_67.json
+      📄 27d703671f2d_68.json
+      📄 27d703671f2d_69.json
+      📄 27d703671f2d_7.json
+      📄 27d703671f2d_70.json
+      📄 27d703671f2d_71.json
+      📄 27d703671f2d_72.json
+      📄 27d703671f2d_73.json
+      📄 27d703671f2d_74.json
+      📄 27d703671f2d_75.json
+      📄 27d703671f2d_76.json
+      📄 27d703671f2d_77.json
+      📄 27d703671f2d_78.json
+      📄 27d703671f2d_79.json
+      📄 27d703671f2d_8.json
+      📄 27d703671f2d_80.json
+      📄 27d703671f2d_81.json
+      📄 27d703671f2d_82.json
+      📄 27d703671f2d_83.json
+      📄 27d703671f2d_84.json
+      📄 27d703671f2d_85.json
+      📄 27d703671f2d_86.json
+      📄 27d703671f2d_87.json
+      📄 27d703671f2d_88.json
+      📄 27d703671f2d_89.json
+      📄 27d703671f2d_9.json
+      📄 27d703671f2d_90.json
+      📄 27d703671f2d_91.json
+      📄 27d703671f2d_92.json
+      📄 27d703671f2d_93.json
+      📄 27d703671f2d_94.json
+      📄 27d703671f2d_95.json
+      📄 27d703671f2d_96.json
+      📄 27d703671f2d_97.json
+      📄 27d703671f2d_98.json
+      📄 27d703671f2d_99.json
+    📁 mcp_data/
+    📁 prompts/
+      📄 summary_prompt_20250520_070332.txt
+    📁 summaries/
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_0.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_1.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_10.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_11.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_12.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_13.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_14.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_2.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_3.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_4.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_5.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_6.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_7.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_8.json
+      📄 summary_2655316cf6e30aae5d99bd8b79fa10b1_9.json
+  📁 python/
+    📄 auth.py
+    📄 chat_exporter.py
+    📄 chunk_searcher.py
+    📄 debug_rag_workflow.py
+    📄 file_chunker.py
+    📄 file_summarizer.py
+    📄 main.py
+    📄 mcp_helper.py
+    📄 models.py
+    📄 sbert_rag_assistant.py
+    📄 simple_rag_assistant.py
+    📄 template_processor.py
+    📄 test_auth.py
+  📁 review_assistant_env/
+    📁 include/
+      📁 python3.11/
+    📁 lib/
+      📁 python3.11/
+        📁 site-packages/
+  📁 scripts/
+    📄 check_python_env.sh
+    📄 config.sh
+    📄 debug.sh
+    📄 export_chat.sh
+    📄 full_rag_workflow.sh
+    📄 generate_structured_prompt.sh
+    📄 install_dependencies.sh
+    📁 mcp_workflows/
+      📁 architecture_analysis/
+        📄 config.json
+    📄 rag_assistant.sh
+    📄 rag_helper.sh
+    📄 rag_menu.sh
+    📄 run_chat.sh
+  📄 system_analysis_report.txt
+  📄 system_analyzer.py
+  📁 templates/
+    📄 summary_prompt_template.md
+  📁 venv/
+    📁 include/
+      📁 python3.11/
+    📁 lib/
+      📁 python3.11/
+        📁 site-packages/
+
+================================================================================
+SCRIPT LOCATION ANALYSIS
+================================================================================
+
+Script Location Analysis:
+
+✓ All core scripts are in the expected python directory.
+
+Shell scripts found in scripts directory:
+- rag_assistant.sh
+- config.sh
+- check_python_env.sh
+- full_rag_workflow.sh
+- install_dependencies.sh
+- rag_helper.sh
+- export_chat.sh
+- run_chat.sh
+- rag_menu.sh
+- generate_structured_prompt.sh
+- debug.sh
+
+
+================================================================================
+SCRIPT ANALYSIS
+================================================================================
+
+----------------------------------------
+Core Script: file_chunker.py
+
+Description:
+file_chunker.py ─ Break large files into overlapping JSON chunks
+----------------------------------------------------------------
+* Pure‑Python; zero external dependencies
+* Defaults come from scripts/config.sh (if available) but can be overridden
+* Adds rich metadata (source path, char offsets, timestamp, SHA256 of content)
+
+Command line arguments: Uses argparse for command-line arguments
+
+Functions:
+- chunk_text: Return a list of chunk dicts ready for JSON serialisation.
+- write_chunks: Write each chunk as a separate JSON file; return # actually written.
+- parse_cli
+- main
+
+Main function: main
+
+
+----------------------------------------
+Core Script: file_summarizer.py
+
+Description:
+File Summarizer Script
+
+This script processes chunked JSON files and extracts their content for summarization.
+It's part of a local RAG workflow to handle large content files efficiently.
+[Warning: Could not parse the full script due to syntax error]
+
+Command line arguments: Uses argparse for command-line arguments
+
+Script has a __name__ == '__main__' block for direct execution
+
+----------------------------------------
+Core Script: chunk_searcher.py
+
+Description:
+chunk_searcher.py - Search through chunked code files using keyword matching
+
+Command line arguments: Uses argparse for command-line arguments
+
+Functions:
+- parse_args: Parse command line arguments.
+- load_chunks: Load all chunks from the chunks directory.
+- search_chunks: Search for the query in the chunks.
+- highlight_matches: Highlight matches in the content.
+- search_command_handler: Handle the search command.
+- main: Main function.
+
+Main function: main
+
+
+----------------------------------------
+Core Script: mcp_helper.py
+
+Description:
+Master Content Prompt Helper
+
+This script assembles summarized chunks into a unified prompt
+for use with AI assistants in a local RAG workflow.
+
+Command line arguments: Uses argparse for command-line arguments
+
+Functions:
+- load_template: Load a prompt template file.
+- load_summaries: Load all summary JSON files in a directory.
+- generate_prompt: Assemble the final prompt from summaries and a template.
+- save_prompt: Save prompt to a timestamped .txt file.
+- main
+
+Main function: main
+
+
+----------------------------------------
+Driver Script: main.py
+
+Description:
+Main entry point for the web application.
+Initializes the Flask server, sets up routes, and configures the database.
+
+Script has a __name__ == '__main__' block for direct execution
+
+Contains 1 functions
+
+----------------------------------------
+Driver Script: simple_rag_assistant.py
+
+Description:
+Simple RAG Assistant (pure‑Python)
+----------------------------------
+Lightweight TF‑IDF + cosine search; no external ML libraries.
+
+Usage:
+  ./simple_rag_assistant.py             # uses CHUNKS_DIR from config.sh
+  ./simple_rag_assistant.py --chunks-dir /path/to/chunks
+
+Command line arguments: Uses argparse for command-line arguments
+
+Main function: main
+
+
+Contains 2 functions
+Contains 6 classes
+
+
+================================================================================
+SHELL SCRIPT ANALYSIS
+================================================================================
+
+Description:
+Launch assistant
+
+
+================================================================================
+WORKFLOW ANALYSIS
+================================================================================
+
+Typical Workflow Analysis:
+
+Python scripts invoked by the shell script:
+- "$CORE_DIR/file_chunker.py" "$SRC_DIR" --output "$OUT_DIR"
+- "$PY_DIR/simple_rag_assistant.py" --chunks-dir "$OUT_DIR"
+- "$CORE_DIR/file_chunker.py" "$SRC_DIR" --output "$OUT_DIR" --extensions .py,.js,.html,.css,.md,.txt --chunk-size 500 --overlap 50 --verbose
+- -c "import $pkg" 2>/dev/null
+- -m pip install $pkg"
+- --version)" # Launch assistant
+- "$PY_DIR/rag_assistant.py" --chunks-dir "$OUT_DIR"
+
+Environment variables used in the script:
+- GREEN
+- BLUE
+- RED
+- YELLOW
+- NC
+- ROOT
+- CORE_DIR
+- PY_DIR
+- OUT_DIR
+- SRC_DIR
+- NUM_CHUNKS
+
+
+
+================================================================================
+DEPENDENCIES ANALYSIS
+================================================================================
+
+Dependencies required by the system:
+
+External Python libraries used:
+- app
+- auth
+- flask
+- flask_sqlalchemy
+- jwt
+- models
+- pytz
+- sentence_transformers
+- werkzeug
+
+Standard library modules used:
+- __future__
+- argparse
+- datetime
+- dotenv
+- functools
+- glob
+- hashlib
+- json
+- math
+- os
+- pathlib
+- re
+- shutil
+- subprocess
+- sys
+- typing
+- unittest
+
+
+================================================================================
+DEPENDENCY CHECK
+================================================================================
+
+Missing Dependencies Check:
+
+Potentially missing dependencies:
+- app
+- flask
+- flask_sqlalchemy
+- jwt
+- pytz
+- sentence_transformers
+- werkzeug
+

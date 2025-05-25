@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_257.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nlumn(db.DateTime, default=now_ist)\n\n    items = db.relationship('OrderItem', backref='order', lazy=True)\n\n    def to_dict(self) -> Dict[str, Any]:\n        return {\n            'id': self.id,\n            'user_id': self.user_id,\n            'status': self.status,\n            'total_amount': self.total_amount,\n            'created_at': self.created_at.isoformat(),\n            'items': [item.to_dict() for item in self.items]\n        }\n\n    def __repr__(self) -> str:\n        return f\"<Order {self.id} Status: {self.status} Total: {self.total_amount}>\"\n\nclass OrderItem(db.Model):\n    \"\"\"Order item for linking products to orders.\"\"\"\n\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_60.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nlumn(db.Integer, db.ForeignKey('order.id'), nullable=False)\n    product_id: int = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)\n    quantity: int = db.Column(db.Integer, nullable=False)\n    price_at_time: float = db.Column(db.Float, nullable=False)  # Price when ordered\n\n    def to_dict(self) -> Dict[str, Any]:\n        return {\n            'id': self.id,\n            'order_id': self.order_id,\n            'product_id': self.product_id,\n            'quantity': self.quantity,\n            'price_at_time': self.price_at_time\n        }\n    \n    def __repr__(self) -> str:\n        return f\"<OrderItem {self.id} Product: {self.product_id} Qty: {self.quantity}>\"\nWould you want me to help with:\n\nAdding custom validation methods?\n\n\n\u2026"
+}

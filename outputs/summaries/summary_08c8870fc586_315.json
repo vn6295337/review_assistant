@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_315.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n() {\n  local dir=\"$1\"\n  if [[ -d \"$dir\" ]]; then\n    echo -e \"${GREEN}\u2714 Directory exists:${NC} $dir\"\n    ls -la \"$dir\" 2>/dev/null | head -n10\n  else\n    echo -e \"${RED}\u2716 Missing directory:${NC} $dir\"\n  fi\n  echo\n}\n\ncheck_file() {\n  local file=\"$1\"\n  if [[ -f \"$file\" ]]; then\n    echo -e \"${GREEN}\u2714 File exists:${NC} $file\"\n    echo \"   Size: $(du -h \"$file\" | cut -f1)\"\n  else\n    echo -e \"${RED}\u2716 Missing file:${NC} $file\"\n  fi\n  echo\n\n\u2026"
+}

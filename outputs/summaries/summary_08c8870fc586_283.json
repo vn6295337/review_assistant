@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_283.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nhas the correct variable placeholders\")\n    print(\"\u2139 4. Run the full_rag_workflow.sh script with verbose logs to trace any issues\")\n\nif __name__ == \"__main__\":\n    main()\nChatGPT said:\ndebug_rag_workflow.py is a helpful diagnostic utility that:\n\nVerifies your RAG workflow directories and files exist\n\nValidates JSON chunk and summary files\n\nChecks that templates have the expected variables\n\nScans generated prompt files for issues like unreplaced variables or JSON fragments\n\nPrints useful info and warnings for troubleshooting\n\nDo you need this script?\nNot strictly necessary for core functionality \u2014 it doesn't participate in the workflow itself.\n\n\u2026"
+}

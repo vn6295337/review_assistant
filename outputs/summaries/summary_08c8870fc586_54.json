@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_54.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nalysis {timestamp}\"\n        \n        # Replace template placeholders\n        prompt = template.replace(\"{summaries}\", joined_summaries)\n        prompt = prompt.replace(\"{title}\", title)\n        \n        return prompt\n    except Exception as e:\n        print(f\"\u26a0 Error generating prompt: {str(e)}\")\n        return None\n\n\ndef save_prompt(prompt, output_dir):\n    \"\"\"\n    Save a prompt to a file with timestamp.\n    \n    Args:\n        prompt (str): Prompt content\n        output_dir (str): Directory to save the prompt\n        \n\n\u2026"
+}

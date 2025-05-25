@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_346.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nf line.strip() == \"\":\n                # Check if it's the end or just a blank line within the content\n                confirm = input(\"Is this the end of your chat? (y/n): \").lower()\n                if confirm == 'y' or confirm == 'yes':\n                    break\n                else:\n                    lines.append(\"\")  # Preserve the blank line\n            else:\n                lines.append(line)\n    except KeyboardInterrupt:\n        print(\"\\nInput interrupted.\")\n    \n    return \"\\n\".join(lines)\n\ndef parse_chat(content):\n    \"\"\"Parse chat content into structured format.\"\"\"\n    # Split into messages\n    # Common patterns in Claude chat exports\n    patterns = [\n        r\"Human: (.*?)(?=\\nClaude: |\\Z)\",  # Human messages\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_297.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nk and verify the RAG environment\n  clean [--all]         Clean temporary files (--all includes outputs)\n  stats                 Show statistics about chunks and summaries\n  combine FILE1 FILE2   Combine multiple chunk files into single context\n  extract TYPE PATH     Extract key information from file (types: code, doc, summary)\n  regen PATH            Regenerate chunks and summaries for a file\n  optimize FILE         Optimize a file for context window efficiency\n  help                  Show this help message\n\nExamples:\n  $(basename \"$0\") check\n  $(basename \"$0\") clean\n  $(basename \"$0\") stats\n  $(basename \"$0\") combine chunk_1.txt chunk_2.txt > combined.txt\n  $(basename \"$0\") extract code ./my_script.py\n\nEOF\n}\n\n# Check RAG environment\n\n\u2026"
+}

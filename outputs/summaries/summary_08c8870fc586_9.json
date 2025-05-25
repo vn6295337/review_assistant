@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_9.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n_summarizer.py # Creates summaries\n\u2502   \u251c\u2500\u2500 rag_assistant.py  # Interactive search tool\n\u2502   \u2514\u2500\u2500 mcp_helper.py     # Multi-chunk prompt utilities\n\u251c\u2500\u2500 scripts/              # Shell scripts\n\u2502   \u251c\u2500\u2500 full_rag_workflow.sh\n\u2502   \u251c\u2500\u2500 rag_assistant.sh\n\u2502   \u251c\u2500\u2500 rag_helper.sh\n\u2502   \u251c\u2500\u2500 rag_menu.sh\n\u2502   \u2514\u2500\u2500 check_python_env.sh\n\u2514\u2500\u2500 templates/            # Prompt templates\n\n\n## Enhancement Recommendations\n\n### 1. Script Consolidation\n\nI notice some redundancy and overlap in your shell scripts. Consider consolidating:\n\nbash\n#!/bin/bash\n\n\u2026"
+}

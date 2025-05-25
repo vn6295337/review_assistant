@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_172.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n$DEFAULT_CHUNK_SIZE\"\n  echo \"DEFAULT_OVERLAP  = $DEFAULT_OVERLAP\"\n  echo \"DEFAULT_TEMPLATE = $DEFAULT_TEMPLATE\"\n  echo\n  echo \"SECRET_KEY       = $SECRET_KEY\"\n  echo \"-----------------------------\"\n}\nChatGPT said:\nHere\u2019s the updated setup:\n\n\u2705 Changes You Asked For\nNew folder: codebase/chat_sessions must be referenced in config.sh.\n\nchat_exporter.py must now import paths from environment variables like CHUNKS_DIR, SUMMARIES_DIR, etc.\n\nThe script will read these from os.environ, assuming config.sh is sourced in the terminal before running the script.\n\n\u2705 Updated config.sh\nAdd the following below the OUTPUTS_DIR block:\n\n\n\u2026"
+}

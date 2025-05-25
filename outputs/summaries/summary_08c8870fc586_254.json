@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_254.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n,\n            'description': self.description,\n            'price': self.price,\n            'stock': self.stock,\n            'category': self.category\n        }\n    \n    def __repr__(self) -> str:\n        return f\"<Product {self.name} (${self.price})>\"\n\nclass Order(db.Model):\n    \"\"\"Order model for tracking purchases.\"\"\"\n\n    id: int = db.Column(db.Integer, primary_key=True)\n    user_id: int = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)\n    status: str = db.Column(db.String(20), default='pending')  # pending, shipped, delivered, cancelled\n    total_amount: float = db.Column(db.Float)\n    created_at: datetime = db.Column(db.DateTime, default=datetime.utcnow)\n\n    items = db.relationship('OrderItem', backref='order', lazy=True)\n\n\u2026"
+}

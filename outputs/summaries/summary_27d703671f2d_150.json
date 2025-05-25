@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_150.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nto also:\n\nParse and extract only the {summaries} block\n\nInclude a timestamp in the export file\n\nAutomatically open the export after saving (if possible on your setup)\n\nYou said:\nThis is the original codebase for chat_exporter.py. Refactor it so that everytime I run this, everything should start from a clean slate\n\n#!/usr/bin/env python3\n\"\"\"\nChat Exporter for Claude Sessions\n\nThis script exports the current Claude chat session to a text file\nthat can be processed by the RAG assistant tools.\n\nUsage:\n1. Copy this entire script\n\n\u2026"
+}

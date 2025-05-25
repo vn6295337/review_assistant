@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_124.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n)\n      clear\n      echo \"=== Chunk Search ===\"\n      echo \"1) Run search\"\n      echo \"2) Show chunk_searcher.py help\"\n      echo \"3) Back to main menu\"\n      echo\n      echo \"Enter your choice (1-3):\"\n      read -r SEARCH_CHOICE\n      \n      case $SEARCH_CHOICE in\n        1) clear; search_chunks ;;\n        2) clear; show_help \"chunk_searcher.py\" \"search\" ;;\n        3) continue ;;\n        *) echo \"Invalid choice\"; sleep 1 ;;\n      esac\n      ;;\n    2)\n      clear\n      echo \"=== Multi-Chunk Prompt Helper ===\"\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_377.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nistant/scripts/file_chunker.py\nBut all .py files are actually in:\n\n/mnt/chromeos/removable/USB Drive/review_assistant/python/\n\ud83d\udd27 So update run_chat.sh to use the correct path.\nOpen scripts/run_chat.sh and change:\n\npython3 \"$SCRIPT_DIR/../scripts/file_chunker.py\"\nto:\n\npython3 \"$PYTHON_DIR/file_chunker.py\"\n(assuming config.sh is correctly exporting PYTHON_DIR)\n\n\ud83e\uddfc Final Cleanup Tip\nYou might want to search your entire project for incorrect paths pointing to /scripts/file_chunker.py and update them to /python/file_chunker.py.\n\nRun this inside your review_assistant folder:\n\ngrep -r \"scripts/file_chunker.py\" .\nUpdate any hardcoded ones you find.\n\n\u2026"
+}

@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_140.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nob\nimport datetime\nfrom pathlib import Path\nfrom typing import List, Optional\n\n# Default directories (fallbacks if no CLI args)\nDEFAULT_SUMMARIES_DIR = Path(__file__).resolve().parent.parent / \"outputs/summaries\"\nDEFAULT_PROMPTS_DIR = Path(__file__).resolve().parent.parent / \"outputs/prompts\"\n\n\ndef load_template(template_path: Path) -> Optional[str]:\n    \"\"\"Load a prompt template file.\"\"\"\n    try:\n        return template_path.read_text(encoding='utf-8')\n    except Exception as e:\n        print(f\"\u26a0 Error loading template: {e}\")\n        return None\n\n\ndef load_summaries(summaries_dir: Path, verbose: bool = False) -> List[dict]:\n\n\u2026"
+}

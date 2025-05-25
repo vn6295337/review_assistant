@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_139.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\nary files\n        verbose (bool): Whether to print verbose output\n\n    Returns:\n        int: Number of successfully processed files\n    \"\"\"\n    if verbose:\n        print(f\"Processing directory: {input_dir}\")\n        print(f\"Output directory: {output_dir}\")\n\n    if not os.path.isdir(input_dir):\n        print(f\"\u26a0 Input directory does not exist: {input_dir}\")\n        return 0\n\n    os.makedirs(output_dir, exist_ok=True)\n    success_count = 0\n    file_count = 0\n\n    for filename in sorted(os.listdir(input_dir)):\n        if filename.endswith('.json'):\n\n\u2026"
+}

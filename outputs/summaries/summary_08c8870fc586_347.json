@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_347.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n=re.DOTALL)\n        \n        md_content += f\"## {role}\\n\\n{content}\\n\\n\"\n        md_content += \"---\\n\\n\"  # Add separator between messages\n    \n    return md_content\n\ndef format_as_text(messages, title=\"Claude Chat Export\"):\n    \"\"\"Format messages as plain text.\"\"\"\n    now = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    text_content = f\"{title}\\n\"\n    text_content += f\"Exported on: {now}\\n\\n\"\n    \n    for msg in messages:\n        role = msg[\"role\"].capitalize()\n        content = msg[\"content\"]\n        \n        text_content += f\"{role}:\\n{content}\\n\\n\"\n        text_content += \"-\" * 80 + \"\\n\\n\"  # Add separator between messages\n    \n\n\u2026"
+}

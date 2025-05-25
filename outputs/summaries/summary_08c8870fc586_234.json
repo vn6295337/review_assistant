@@ -1,0 +1,4 @@
+{
+  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_234.json",
+  "summary": "### Chunk unknown \u2014 unknown\n\n\"metadata\": metadata,\n                \"similarity\": similarity\n            }\n            for _, text, metadata, similarity in top_results\n        ]\n        \n        return results\n\nclass SimpleRAGAssistant:\n    def __init__(self, chunks_dir):\n        self.chunks_dir = chunks_dir\n        self.vector_store = None\n        self.chunks = []\n        self.metadata = []\n        \n        print(f\"Initializing Simple RAG Assistant with chunks from: {chunks_dir}\")\n        \n    def load_chunks(self):\n        \"\"\"Load chunked files from the chunks directory\"\"\"\n        chunk_files = glob.glob(os.path.join(self.chunks_dir, \"*.json\"))\n\n\u2026"
+}

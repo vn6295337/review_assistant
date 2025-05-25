@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_67.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nike pytest or unittest automatically discover tests named like test_*.py. Merging this into unrelated test files reduces clarity and could slow down test runs.\n\nReusability and CI integration:\nKeeping tests modular allows CI tools (like GitHub Actions, GitLab CI) to selectively run only changed test files. Mixing test concerns defeats that.\n\n\u2705 Your Existing Test File Is Solid\nYour test_auth.py already tests:\n\nToken creation and correct sub value\n\nValid token decoding\n\nExpired token rejection\n\n\u2705 Optional Improvements\nIf you want to go further:\n\nMove SECRET_KEY to app.config or .env and import it into the test via mocking, rather than hardcoding it.\n\nAdd a test for malformed tokens:\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_102.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nr.log\"\n\n# Create directories if they don't exist\nmkdir -p \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\" \"$PROMPTS_DIR\" \"$(dirname \"$LOG_FILE\")\"\n\n# Logging function\nlog() {\n  local msg=\"[$(date '+%Y-%m-%d %H:%M:%S')] $1\"\n  echo \"$msg\" | tee -a \"$LOG_FILE\"\n}\n\n# Help message\nshow_help() {\n  cat << EOF\nRAG Helper Script - Utilities for the local RAG pipeline\n\nUsage: $(basename \"$0\") [OPTIONS] COMMAND [ARGS]\n\nCommands:\n  check                 Check and verify the RAG environment\n\n\u2026"
-}

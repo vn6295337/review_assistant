@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_38.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n_doc_freq.get(term, 0) + 1)) + 1\n            \n            # TF-IDF score\n            vector[term] = tf * idf\n        \n        return vector\n    \n    def similarity(self, vec1, vec2):\n        \"\"\"Calculate cosine similarity between two vectors\"\"\"\n        # Find common terms\n        common_terms = set(vec1.keys()) & set(vec2.keys())\n        \n        # Calculate dot product\n        dot_product = sum(vec1[term] * vec2[term] for term in common_terms)\n        \n        # Calculate magnitudes\n        mag1 = math.sqrt(sum(val * val for val in vec1.values()))\n        mag2 = math.sqrt(sum(val * val for val in vec2.values()))\n        \n        # Calculate cosine similarity (avoid division by zero)\n\n\u2026"
-}

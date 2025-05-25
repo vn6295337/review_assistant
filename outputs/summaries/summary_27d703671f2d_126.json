@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_126.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n=============${NC}\"\necho \"\"\n\n# Function to check if a Python package is installed\ncheck_package() {\n  python3 -c \"import $1\" 2>/dev/null\n  if [ $? -eq 0 ]; then\n    echo -e \"${GREEN}\u2713 $1 is already installed${NC}\"\n    return 0\n  else\n    echo -e \"${YELLOW}\u26a0 $1 is not installed${NC}\"\n    return 1\n  fi\n}\n\n# Function to install a Python package\ninstall_package() {\n  echo -e \"${BLUE}Installing $1...${NC}\"\n  python3 -m pip install \"$1\"\n  if [ $? -eq 0 ]; then\n\n\u2026"
-}

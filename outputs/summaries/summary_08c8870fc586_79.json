@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_79.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nresult.append(highlighted_line)\n    \n    return '\\n'.join(result)\n\ndef search_command_handler(args):\n    \"\"\"Handle the search command.\"\"\"\n    # Load chunks\n    print(f\"Loading chunks from {args.chunks_dir}...\")\n    chunks = load_chunks(args.chunks_dir, args.extensions)\n    print(f\"Loaded {len(chunks)} chunks\")\n    \n    # Search for the query\n    print(f\"Searching for '{args.query}'...\")\n    results = search_chunks(chunks, args.query, args.limit)\n    print(f\"Found {len(results)} matching chunks\")\n    \n    # Highlight matches\n    for chunk in results:\n        chunk['highlighted_content'] = highlight_matches(chunk['content'], args.query, args.context)\n    \n\n\u2026"
-}

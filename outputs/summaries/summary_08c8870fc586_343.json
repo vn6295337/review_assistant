@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_343.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nry,\nand saves the output in the requested format (txt, md, or json).\n\"\"\"\n\nimport os\nimport json\nimport argparse\nfrom pathlib import Path\nimport shutil\n\n\nDEFAULT_PROMPTS_DIR = Path(__file__).resolve().parent.parent / \"outputs/prompts\"\nDEFAULT_EXPORT_DIR = Path(__file__).resolve().parent.parent / \"outputs/exports\"\n\n\ndef find_latest_prompt_file(prompts_dir: Path) -> Path:\n    prompt_files = sorted(prompts_dir.glob(\"summary_prompt_*.txt\"), reverse=True)\n    if not prompt_files:\n        raise FileNotFoundError(\"\u274c No summary_prompt_*.txt files found\")\n    return prompt_files[0]\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_53.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nent or None if error\n    \"\"\"\n    try:\n        with open(template_file, 'r', encoding='utf-8') as f:\n            return f.read()\n    except Exception as e:\n        print(f\"\u26a0 Error loading template: {str(e)}\")\n        return None\n\n\ndef load_summaries(summaries_dir):\n    \"\"\"\n    Load all summary files from a directory.\n    \n    Args:\n        summaries_dir (str): Directory containing summary files\n        \n    Returns:\n        list: List of summary dictionaries or [] if error\n    \"\"\"\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_142.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ntitle=args.title)\n    if not prompt:\n        print(\"\u274c Failed to generate prompt\")\n        return 1\n\n    output_file = save_prompt(prompt, args.output_dir)\n    if not output_file:\n        print(\"\u274c Failed to save prompt\")\n        return 1\n\n    print(f\"\u2713 Prompt saved: {output_file}\")\n    return 0\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())\nChatGPT said:\nWhy you\u2019re seeing JSON fragments in the prompt\nfile_summarizer.py currently copies the entire raw chunk text into\nplain_text_summary.\n\n\u2026"
-}

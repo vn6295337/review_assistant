@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_373.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nt/chromeos/removable/USB Drive/review_assistant\nhas a space in USB Drive, which must be quoted or escaped in scripts.\n\n\u2705 Fix: Quote path variables in your scripts\n1. Edit run_chat.sh\nUpdate line 9:\n\nBefore:\n\nsource \"${SCRIPT_DIR}/../config.sh\"\nAfter:\n\nsource \"${SCRIPT_DIR}/../config.sh\"\nNo change needed there, but ensure that when you run the script, you quote the path to config.sh like this:\n\n2. Correct command to source it manually:\nsource \"/mnt/chromeos/removable/USB Drive/review_assistant/config.sh\"\nOr escaped:\n\nsource /mnt/chromeos/removable/USB\\ Drive/review_assistant/config.sh\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_368.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nmmarizer.py \u2192 outputs/summaries/\n\"\"\"\n\nimport os\nimport subprocess\nimport shutil\nimport datetime\nfrom pathlib import Path\nimport argparse\nimport sys\n\n# === Load environment-based configuration ===\ndef require_env(key):\n    val = os.environ.get(key)\n    if not val:\n        print(f\"\u274c Environment variable '{key}' is not set. Did you source config.sh?\")\n        sys.exit(1)\n    return Path(val)\n\nCHAT_SESSIONS_DIR = require_env(\"CHAT_SESSIONS_DIR\")\n\n\u2026"
-}

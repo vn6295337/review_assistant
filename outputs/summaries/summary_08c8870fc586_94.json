@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_94.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nexit 1\n    }\n  done\n}\n\nif [[ \"${1:-}\" == \"--simple\" ]]; then\n  echo -e \"${BLUE}=== Simple RAG Mode ===${NC}\"\n  mkdir -p \"$OUT_DIR\"\n  python3 \"$CORE_DIR/file_chunker.py\" \"$SRC_DIR\" --output \"$OUT_DIR\"\n  python3 \"$PY_DIR/simple_rag_assistant.py\" --chunks-dir \"$OUT_DIR\"\n  exit 0\nfi\n\necho -e \"${BLUE}Full RAG Assistant Setup${NC}\"\nmkdir -p \"$OUT_DIR\"\n\ncheck_file_exists \"$CORE_DIR/file_chunker.py\"\ncheck_file_exists \"$PY_DIR/rag_assistant.py\"\ncheck_dir_exists \"$SRC_DIR\"\n\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_81.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nript\n\nThis script processes chunked JSON files and extracts their content for summarization.\nIt's part of a local RAG workflow to handle large content files efficiently.\n\"\"\"\n\nimport os\nimport json\nimport argparse\n\n\ndef summarize_chunk(input_file, output_dir):\n    \"\"\"\n    Extract content from a JSON chunk file and save as a summary.\n\n    Args:\n        input_file (str): Path to the input JSON chunk file\n        output_dir (str): Directory to save the summary output\n\n    Returns:\n\n\u2026"
-}

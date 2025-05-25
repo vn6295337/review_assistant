@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_84.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n\"\"\nDebug RAG Workflow Script\n\nThis script checks your RAG workflow setup and diagnoses common issues.\n\"\"\"\n\nimport os\nimport json\nimport sys\nimport glob\nfrom pathlib import Path\n\n# Configuration\nROOT_DIR = \"/mnt/chromeos/removable/USB Drive/review_assistant\"\nPYTHON_DIR = os.path.join(ROOT_DIR, \"python\")\nTEMPLATES_DIR = os.path.join(ROOT_DIR, \"templates\")\nSUMMARIES_DIR = os.path.join(ROOT_DIR, \"outputs/summaries\")\nCHUNKS_RAW_DIR = os.path.join(ROOT_DIR, \"chunks\")\nCHUNKS_OUTPUT_DIR = os.path.join(ROOT_DIR, \"outputs/chunks\")\nPROMPTS_DIR = os.path.join(ROOT_DIR, \"outputs/prompts\")\n\n\u2026"
-}

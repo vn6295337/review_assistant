@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_85.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n# Print each key-value pair (truncated if large)\n            for key, value in data.items():\n                if isinstance(value, str) and len(value) > 500:\n                    value_preview = value[:500] + \"...\"\n                else:\n                    value_preview = value\n                print(f\"\u2139   {key}: {value_preview}\")\n            \n            return data\n    except json.JSONDecodeError:\n        print(f\"\u274c Invalid JSON in {file_path}\")\n        return None\n    except Exception as e:\n        print(f\"\u274c Error reading {file_path}: {str(e)}\")\n        return None\n\ndef list_directory_files(dir_path, pattern=\"*\", max_display=5):\n    \"\"\"List files in a directory matching a pattern.\"\"\"\n    files = glob.glob(os.path.join(dir_path, pattern))\n    \n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_356.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n/Downloads/chat_exports\")\n        print(f\"\u26a0 Falling back to: {fallback}\")\n        args.output_dir = fallback\n        reset_output_directory(fallback)\n\n    title = args.title.strip() or \"Claude Chat Export\"\n    content = read_chat_from_file(args.input_file)\n    if not content:\n        print(\"\u274c No content to parse. Exiting.\")\n        return\n\n    messages = parse_chat(content)\n    if not messages:\n        print(\"\u274c Could not parse any messages. Exiting.\")\n        return\n\n    saved_file = save_chat(messages, args.format, args.output_dir, title)\n    code_files = extract_code_snippets(messages, args.output_dir)\n\n    print(\"\\n\u2705 Export complete!\")\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_375.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nsomewhere else, move or copy it there, e.g.:\n\nmv /mnt/chromeos/removable/USB\\ Drive/review_assistant/scripts/config.sh /mnt/chromeos/removable/USB\\ Drive/review_assistant/\n5. Once config.sh is in the right place:\nFrom anywhere, you can do:\n\ncd \"/mnt/chromeos/removable/USB Drive/review_assistant/scripts\"\n./run_chat.sh \"Chat with CFO\"\n6. Alternative: Run script from the root folder\nYou can also run it from review_assistant root folder as:\n\ncd \"/mnt/chromeos/removable/USB Drive/review_assistant\"\n./scripts/run_chat.sh \"Chat with CFO\"\nThis way, relative paths will resolve correctly and the script will find ../config.sh.\n\nTL;DR\nDo not run ./scripts/run_chat.sh from inside the scripts folder.\n\nRun ./run_chat.sh from inside scripts, or\n\n\n\u2026"
-}

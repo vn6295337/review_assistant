@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_385.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ns argparse for command-line arguments\n\nFunctions:\n- chunk_text: Return a list of chunk dicts ready for JSON serialisation.\n- write_chunks: Write each chunk as a separate JSON file; return # actually written.\n- parse_cli\n- main\n\nMain function: main\n\n\n----------------------------------------\nCore Script: file_summarizer.py\n\nDescription:\nFile Summarizer Script\n\nThis script processes chunked JSON files and extracts their content for summarization.\nIt's part of a local RAG workflow to handle large content files efficiently.\n[Warning: Could not parse the full script due to syntax error]\n\n\u2026"
-}

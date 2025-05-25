@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_103.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\npython_version=$(python3 --version)\n    echo \"\u2705 $python_version found\"\n  fi\n  \n  # Check directory structure\n  for dir in \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\" \"$PROMPTS_DIR\"; do\n    if [[ -d \"$dir\" ]]; then\n      echo \"\u2705 Directory exists: $(basename \"$dir\")\"\n    else\n      echo \"\u274c Missing directory: $(basename \"$dir\")\"\n      missing=$((missing + 1))\n    fi\n  done\n  \n  if [[ $missing -eq 0 ]]; then\n    echo \"\u2705 RAG environment check passed.\"\n  else\n    echo \"\u274c RAG environment check failed with $missing issues.\"\n    return 1\n  fi\n\n\u2026"
-}

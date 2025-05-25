@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_36.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nummarizer.py accordingly) to avoid re\u2011summarising unchanged chunks.\nClipboard/editor\tFalls back to user\u2019s $EDITOR if defined.\nComments / headings\tClean section dividers for easier reading.\nSave, make it executable:\n\nchmod +x review_assistant/scripts/full_rag_workflow.sh\n\u2026and you\u2019re ready to go. Ping me if you\u2019d like tweaks or if any helper scripts still need refactoring!\n\nYou said:\nThere are two files under review_assistant/python:\n1. simple_rag_assistant.py:\n#!/usr/bin/env python3\n\nimport os\nimport glob\nimport json\nimport argparse\nimport sys\nimport math\nimport re\n\n\u2026"
-}

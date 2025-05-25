@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_28.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\npt runs under Bash\nAdded comments above each section\tEasier to understand for future maintenance\n\u2705 How to use this in full_rag_workflow.sh\nAt the top of full_rag_workflow.sh, add:\n\n#!/bin/bash\nset -e\n\n# Load central config\nsource \"$(dirname \"$0\")/config.sh\"\nThis ensures that full_rag_workflow.sh and config.sh work together smoothly regardless of your working directory.\n\nLet me know if you want me to also refactor full_rag_workflow.sh to use this config.sh structure cleanly.\n\nYou said:\nBelow sit is the full_rag_workflow.sh script, refactor it accordingly:\n\n#!/bin/bash\n#\n# Improved Full RAG Workflow Script\n\n\u2026"
-}

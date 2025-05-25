@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_369.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n%M%S}.txt\"\n    print(\"\\n\ud83d\udccb Paste chat content into the nano window. Save and exit when done (Ctrl-O, Enter, Ctrl-X).\")\n    if not open_nano(tmp_file):\n        return\n\n    if not is_file_nonempty(tmp_file):\n        print(\"\u274c No content captured. Exiting.\")\n        tmp_file.unlink(missing_ok=True)\n        return\n\n    # Save to codebase/chat_sessions\n    timestamp = datetime.datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n    safe_title = args.title.strip().replace(\" \", \"_\")\n    dest_file = CHAT_SESSIONS_DIR / f\"{safe_title}_{timestamp}.txt\"\n    shutil.move(tmp_file, dest_file)\n    print(f\"\u2705 Chat saved to: {dest_file}\")\n\n    # Run file_chunker\n    print(\"\ud83d\udd17 Chunking the chat file \u2026\")\n    run_python(FILE_CHUNKER,\n\n\u2026"
-}

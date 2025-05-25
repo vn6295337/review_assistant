@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_65.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nlizes the web server and sets up all routes.\n\"\"\"\nimport os\nfrom flask import Flask, request, jsonify\nfrom .auth import authenticate_user, create_jwt_token\nfrom .models import db, User, Product\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///app.db')\ndb.init_app(app)\n\n@app.route('/')\ndef index():\n    \"\"\"Return the main page.\"\"\"\n    return jsonify({\"status\": \"ok\", \"message\": \"Welcome to the API\"})\n\n@app.route('/login', methods=['POST'])\ndef login():\n    \"\"\"Handle user login and return JWT token.\"\"\"\n    data = request.get_json()\n\n\u2026"
-}

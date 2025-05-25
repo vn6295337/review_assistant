@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_86.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ne:\n            print(\"\u26a0 No template variables found in template file\")\n            \n        return unique_vars\n    except Exception as e:\n        print(f\"\u274c Error analyzing template file {template_path}: {str(e)}\")\n        return []\n\ndef check_prompt_content(prompt_path):\n    \"\"\"Check content of a generated prompt file.\"\"\"\n    try:\n        with open(prompt_path, 'r', encoding='utf-8') as f:\n            content = f.read()\n            \n        print(f\"\u2139 Prompt content (first 500 chars):\\n\")\n        print(content[:500])\n        \n        # Check for unreplaced template variables\n        import re\n        template_vars = re.findall(r'\\{([a-zA-Z0-9_]+)\\}', content)\n\n\u2026"
-}

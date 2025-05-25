@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_349.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nfilepath = save_chat(messages, args.format, args.output_dir, title)\n    \n    # Extract code snippets\n    code_files = extract_code_snippets(messages, args.output_dir)\n    \n    # Output results\n    print(\"\\n=== Export Complete ===\")\n    print(f\"Chat saved to: {filepath}\")\n    if code_files:\n        print(f\"Extracted {len(code_files)} code snippets.\")\n    \n    print(\"\\nYou can now process this file with your RAG tools:\")\n    print(f\"python3 /mnt/chromeos/removable/USB Drive/review_assistant/scripts/file_chunker.py --input-file {filepath}\")\n\nif __name__ == \"__main__\":\n    main()\nChatGPT said:\nHere is the refactored version of your chat_exporter.py script, updated so that:\n\n\u2705 Key Changes:\n\n\u2026"
-}

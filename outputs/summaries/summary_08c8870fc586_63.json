@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_63.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nitional Setup\nIf you haven\u2019t already, install pytz:\n\npip install pytz\nLet me know if you'd like to:\n\nStore time in UTC but display in IST?\n\nAutomatically convert for frontend use?\n\nAdd timezone-aware timestamps in SQLite or Postgres?\n\nYou said:\nhow about auth.py\n\"\"\"\nAuthentication module for user login and JWT token management.\n\"\"\"\nimport jwt\nimport datetime\nfrom werkzeug.security import check_password_hash\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_120.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nctory & Script Checker\n# \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n# Load central config\nSCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\nsource \"$SCRIPT_DIR/config.sh\"\n\n# Colors\nGREEN='\\033[0;32m'\nRED='\\033[0;31m'\nYELLOW='\\033[1;33m'\nCYAN='\\033[0;36m'\nNC='\\033[0m'\n\nprint_header() {\n  echo -e \"${CYAN}=== RAG Debug Checker ===${NC}\"\n  echo -e \"Project root: ${GREEN}$RAG_ROOT${NC}\"\n  echo\n}\n\n\n\u2026"
-}

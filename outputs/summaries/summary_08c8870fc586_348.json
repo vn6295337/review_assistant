@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_348.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nsnippets to separate files.\"\"\"\n    code_dir = os.path.join(output_dir, \"code_snippets\")\n    Path(code_dir).mkdir(exist_ok=True)\n    \n    code_files = []\n    code_pattern = r'\n(\\w*)\\n(.*?)\\n\n'\n    \n    for i, msg in enumerate(messages):\n        snippets = re.findall(code_pattern, msg[\"content\"], re.DOTALL)\n        \n        for j, (lang, code) in enumerate(snippets):\n            if not lang.strip():\n                lang = \"txt\"  # Default extension if language not specified\n                \n            # Create filename\n            timestamp = datetime.datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n            filename = f\"snippet_{i}_{j}_{timestamp}.{lang}\"\n            filepath = os.path.join(code_dir, filename)\n\n\u2026"
-}

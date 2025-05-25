@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_3.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nrnet connection (only for initial setup and using AI tools)\n\n## **Getting Started**\n\n### **First-Time Setup**\n\n1. **Install Dependencies** Open the Linux terminal on your Chromebook and run:\n    \n    \ncd /mnt/chromeos/removable/USB Drive/review_assistant/scripts\n    bash install_dependencies.sh\n\n    \n2. **Verify Installation** Run the environment check:You should see confirmation that all required dependencies are installed.\n    \n    \nbash check_python_env.sh\n\n    \n\n\n\u2026"
-}

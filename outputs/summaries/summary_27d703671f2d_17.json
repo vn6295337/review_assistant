@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_17.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nles/tags\n\nAutomatically index chats in a JSON catalog\n\n\u2705 10. External Storage Support\nYou\u2019re already USB-based, but for portable RAG bundles:\n\nCreate project.zip archives of chunks + summaries + prompts\n\nEnable syncing to Google Drive manually (via file manager)\n\n\ud83d\udd27 Bonus Tools\nYou might consider eventually adding:\n\nsummarize_diff.py: Compares two prompt outputs or chunk versions\n\nsummarize_directory.py: Auto-run summaries on an entire folder\n\ntag_chunks.py: Add topic/keyword tags to chunks automatically for filtering\n\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_78.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nlower().split()\n    \n    # Define a scoring function for chunks\n    def score_chunk(chunk):\n        content = chunk.get('content', '').lower()\n        \n        # Count occurrences of each keyword\n        scores = [content.count(keyword) for keyword in keywords]\n        \n        # If any keyword is not found, return 0\n        if 0 in scores:\n            return 0\n        \n        # Return the sum of occurrences\n        return sum(scores)\n    \n    # Score all chunks\n    scored_chunks = [(chunk, score_chunk(chunk)) for chunk in chunks]\n    \n    # Filter out chunks with zero score\n\n\u2026"
-}

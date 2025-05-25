@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/27d703671f2d_95.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n, and future-proofing.\n\nIf you want, I can help you refactor the full script or add new features like CLI flags, enhanced logging, or automatic dependency installation. Would you like that?\n\nYou said:\nhow about Config.sh? \n#!/bin/bash\n# config.sh - Central configuration for RAG Assistant\n\n# === Base directories ===\nexport RAG_ROOT=\"/mnt/chromeos/removable/USB Drive/review_assistant\"\nexport PYTHON_DIR=\"${RAG_ROOT}/python\"\nexport SCRIPTS_DIR=\"${RAG_ROOT}/scripts\"\nexport TEMPLATES_DIR=\"${RAG_ROOT}/templates\"\nexport OUTPUTS_DIR=\"${RAG_ROOT}/outputs\"\n\n# === Output subdirectories ===\nexport CHUNKS_DIR=\"${OUTPUTS_DIR}/chunks\"\nexport SUMMARIES_DIR=\"${OUTPUTS_DIR}/summaries\"\nexport PROMPTS_DIR=\"${OUTPUTS_DIR}/prompts\"\n\n\u2026"
-}

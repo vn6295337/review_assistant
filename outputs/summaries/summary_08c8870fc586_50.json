@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_50.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nib import Path\n\ndef chunk_file(input_file, output_dir, chunk_size=2000, overlap=200, verbose=False):\n    \"\"\"\n    Break down a file into overlapping chunks.\n    \n    Args:\n        input_file (str): Path to the input file\n        output_dir (str): Directory to save the chunks\n        chunk_size (int): Size of each chunk in characters\n        overlap (int): Overlap between chunks in characters\n        verbose (bool): Whether to print verbose output\n        \n    Returns:\n        int: Number of chunks created or -1 if error\n    \"\"\"\n    try:\n        # Ensure output directory exists\n        os.makedirs(output_dir, exist_ok=True)\n        \n\n\u2026"
-}

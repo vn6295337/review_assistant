@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_265.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nCRET_KEY isn\u2019t set (but remember, in production, it must be overridden).\n\n\ud83e\uddea Optional: Add authenticate_user() tests\nThese would involve mocking the User.query method. I can show you how if you're interested \u2014 it's a good way to unit test auth without needing a real DB.\n\nWould you like that?\n\nYou said:\nHow about chat_exporter.py , do we need that?\n#!/usr/bin/env python3\n\"\"\"\nChat Exporter for Claude Sessions\n\nThis script exports the current Claude chat session to a text file\nthat can be processed by the RAG assistant tools.\n\nUsage:\n1. Copy this entire script\n2. Save it to your Chromebook\n3. Run it with Python 3\n\n\u2026"
-}

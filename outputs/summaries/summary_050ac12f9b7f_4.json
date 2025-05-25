@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_4.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n2. **Follow the Prompts**\n    - Copy all content from your AI chat\n    - Paste it when prompted\n    - Enter a title for the export (optional)\n\nThe chat will be saved to your USB drive for future reference.\n\n### **Searching Through Chunks**\n\nIf you want to find specific information in your chunks:\n\n1. **Run the RAG Assistant in Interactive Mode**\n    \n    \ncd /mnt/chromeos/removable/USB Drive/review_assistant/scripts\n    bash rag_assistant.sh\n\n    \n2. **Enter Your Search Query** Type your question or keyword and press Enter.\n3. **Review Results** The system will show the most relevant chunks matching your query.\n\n\u2026"
-}

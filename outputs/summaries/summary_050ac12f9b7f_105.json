@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_105.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nck summary using file_summarizer.py\n      if [[ -f \"$ROOT_DIR/core/file_summarizer.py\" ]]; then\n        python3 \"$ROOT_DIR/core/file_summarizer.py\" \"$path\" --quick\n      else\n        echo \"Error: file_summarizer.py not found\"\n        return 1\n      fi\n      ;;\n    *)\n      echo \"Error: Unknown extraction type. Use code, doc, or summary.\"\n      return 1\n      ;;\n  esac\n}\n\n# Regenerate chunks and summaries\nregenerate_file() {\n  local path=\"$1\"\n  \n  if [[ ! -f \"$path\" ]]; then\n\n\u2026"
-}

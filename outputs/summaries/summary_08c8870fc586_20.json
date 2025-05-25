@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_20.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nall chunks...${NC}\"\npython3 \"${PYTHON_DIR}/file_summarizer.py\" \\\n  --input-dir \"$CHUNKS_DIR\" \\\n  --output-dir \"$SUMMARIES_DIR\" \\\n  --verbose\n\n# Step 3: Generate final prompt\necho \"\"\necho -e \"${BLUE}Step 3: Generating master prompt...${NC}\"\n\necho -e \"${BLUE}Enter a title for this review:${NC}\"\nread -r review_title\n\nif [ -z \"$review_title\" ]; then\n  review_title=\"Content Analysis $(date +%Y-%m-%d)\"\nfi\n\n# Generate the prompt\necho -e \"${GREEN}Creating prompt with title: $review_title${NC}\"\npython3 \"${PYTHON_DIR}/mcp_helper.py\" \\\n\n\u2026"
-}

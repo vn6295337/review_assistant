@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_10.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nts/summaries\"\nexport PROMPTS_DIR=\"${RAG_ROOT}/outputs/prompts\"\nexport MCP_DATA_DIR=\"${RAG_ROOT}/outputs/mcp_data\"\nexport TEMPLATES_DIR=\"${RAG_ROOT}/templates\"\n\n# Default settings\nexport DEFAULT_CHUNK_SIZE=2000\nexport DEFAULT_OVERLAP=200\nexport DEFAULT_TEMPLATE=\"${TEMPLATES_DIR}/summary_prompt_template.md\"\n\n# Create directories if they don't exist\nfor dir in \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\" \"$PROMPTS_DIR\" \"$MCP_DATA_DIR\" \"$TEMPLATES_DIR\"; do\n  mkdir -p \"$dir\"\ndone\n\n\nThen source this in all your scripts:\nbash\n#!/bin/bash\nsource \"$(dirname \"$0\")/config.sh\"\n\n\u2026"
-}

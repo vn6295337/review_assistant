@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_225.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nsummaries\necho \"\"\necho -e \"${BLUE}Step 2: Generating summaries...${NC}\"\n\n# Clean up existing summaries if needed\nif [ \"$(find \"$SUMMARIES_DIR\" -name \"summary_*.json\" | wc -l)\" -gt 0 ]; then\n  echo -e \"${YELLOW}Existing summaries found.${NC}\"\n  echo -e \"${BLUE}Would you like to regenerate all summaries? (y/n)${NC}\"\n  read -r regenerate_summaries\n\n  if [ \"$regenerate_summaries\" = \"y\" ]; then\n    echo -e \"${YELLOW}Cleaning up existing summaries...${NC}\"\n    rm -f \"${SUMMARIES_DIR}/summary_*.json\"\n  fi\nfi\n\n# Generate summaries for all chunks\necho -e \"${GREEN}Generating summaries for all chunks...${NC}\"\npython3 \"${PYTHON_DIR}/file_summarizer.py\" \\\n  --input-dir \"$CHUNKS_DIR\" \\\n\n\u2026"
-}

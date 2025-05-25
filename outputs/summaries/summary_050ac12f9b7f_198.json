@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_198.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nif verbose:\n        print(\"\\nSummary Generation Complete\")\n        print(f\"Processed {file_count} files\")\n        print(f\"Successfully summarized {success_count} files\")\n\n    return success_count\n\n\ndef main():\n    parser = argparse.ArgumentParser(\n        description='Generate summaries from JSON chunk files'\n    )\n    parser.add_argument('--input-dir', '-i', required=True,\n                        help='Directory containing chunked JSON files')\n    parser.add_argument('--output-dir', '-o', required=True,\n                        help='Directory to save summaries')\n    parser.add_argument('--verbose', '-v', action='store_true',\n                        help='Enable verbose output')\n    args = parser.parse_args()\n\n\n\u2026"
-}

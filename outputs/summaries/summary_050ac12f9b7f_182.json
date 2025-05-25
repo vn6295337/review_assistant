@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_182.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nizer.py\nThis means some lines are indented with tabs, others with spaces. Python requires consistent indentation.\n\n\ud83d\udd27 Fix it by converting all indentation to spaces:\nRun this command in the terminal from your python/ folder:\n\nsed -i 's/\\t/    /g' file_summarizer.py\nThis replaces all tabs with 4 spaces in-place.\n\n\u2705 FIX 2: Wrong path to file_chunker.py\nYour error says it's looking for:\n\n/mnt/chromeos/removable/USB Drive/review_assistant/scripts/file_chunker.py\nBut all .py files are actually in:\n\n/mnt/chromeos/removable/USB Drive/review_assistant/python/\n\ud83d\udd27 So update run_chat.sh to use the correct path.\nOpen scripts/run_chat.sh and change:\n\npython3 \"$SCRIPT_DIR/../scripts/file_chunker.py\"\n\n\u2026"
-}

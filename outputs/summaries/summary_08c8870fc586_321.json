@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_321.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n$1\"\n  if [ $? -eq 0 ]; then\n    echo -e \"${GREEN}\u2713 Successfully installed $1${NC}\"\n    return 0\n  else\n    echo -e \"${RED}\u274c Failed to install $1${NC}\"\n    return 1\n  fi\n}\n\n# Check Python version\necho -e \"${BLUE}Checking Python version...${NC}\"\npython_version=$(python3 --version)\nif [ $? -eq 0 ]; then\n  echo -e \"${GREEN}\u2713 Python is installed: $python_version${NC}\"\nelse\n  echo -e \"${RED}\u274c Python 3 is not installed or not in PATH${NC}\"\n  echo -e \"${YELLOW}Please install Python 3 before continuing${NC}\"\n  exit 1\nfi\n\n\u2026"
-}

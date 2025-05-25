@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_316.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nnot found to inspect.${NC}\"\nfi\necho\n\necho -e \"${GREEN}=== Debug complete ===${NC}\"\nWhat changed:\n\nSourcing your config.sh for all path variables.\n\nColorized output for easier scanning.\n\nFunctions (check_dir, check_file) to avoid repetition.\n\nStrict mode (set -euo pipefail) for safer execution.\n\nScans only your configured directories and scripts, not hard\u2011coded relative paths.\n\nSave this as debug.sh, make it executable (chmod +x debug.sh), and run it to quickly verify your RAG setup.\n\nYou said:\n\n\u2026"
-}

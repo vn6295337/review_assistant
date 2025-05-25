@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_248.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n: List of summary dictionaries or [] if error\n    \"\"\"\n    summaries = []\n    \n    try:\n        summary_files = sorted(glob.glob(os.path.join(summaries_dir, \"summary_*.json\")))\n        \n        for summary_file in summary_files:\n            with open(summary_file, 'r', encoding='utf-8') as f:\n                summary_data = json.load(f)\n                summaries.append(summary_data)\n                \n        return summaries\n    except Exception as e:\n        print(f\"\u26a0 Error loading summaries: {str(e)}\")\n        return []\n\n\ndef generate_prompt(template, summaries, title=None):\n    \"\"\"\n\n\u2026"
-}

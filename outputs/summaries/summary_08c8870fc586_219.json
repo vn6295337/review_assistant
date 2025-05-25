@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_219.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n\"\n@@\n-if [ \"$(find \"$SUMMARIES_DIR\" -name \"summary_*.json\" | wc -l)\" -gt 0 ]; then\n+if [[ \"$(find \"$SUMMARIES_DIR\" -name \"summary_*.json\" | wc -l)\" -gt 0 ]]; then\n@@\n-  fi\n-fi\n-\n-# Generate summaries for all chunks\n-echo -e \"${GREEN}Generating summaries for all chunks...${NC}\"\n-python3 \"${PYTHON_DIR}/file_summarizer.py\" \\\n-  --input-dir \"$CHUNKS_DIR\" \\\n-  --output-dir \"$SUMMARIES_DIR\" \\\n-  --verbose\n+    python3 \"${PYTHON_DIR}/file_summarizer.py\" \\\n+      --input-dir \"$CHUNKS_DIR\" \\\n+      --output-dir \"$SUMMARIES_DIR\" \\\n+      --verbose\n+else\n+    echo -e \"${GREEN}Generating summaries for NEW chunks only...${NC}\"\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_148.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ntGPT said:\nGreat \u2014 here's an updated version of chat_exporter.py that does the following:\n\n\u2705 Improvements:\nAuto-detects the most recent prompt file from outputs/prompts/.\n\nCleans or creates the export directory before saving.\n\nAccepts optional --title, --format, and --verbose flags.\n\n\u2705 New chat_exporter.py\n#!/usr/bin/env python3\n\"\"\"\nChat Exporter\n\nThis script finds the latest summary prompt, optionally cleans the export directory,\nand saves the output in the requested format (txt, md, or json).\n\"\"\"\n\nimport os\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_189.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n79fa10b1_7.json\n      \ud83d\udcc4 summary_2655316cf6e30aae5d99bd8b79fa10b1_8.json\n      \ud83d\udcc4 summary_2655316cf6e30aae5d99bd8b79fa10b1_9.json\n  \ud83d\udcc1 python/\n    \ud83d\udcc4 auth.py\n    \ud83d\udcc4 chat_exporter.py\n    \ud83d\udcc4 chunk_searcher.py\n    \ud83d\udcc4 debug_rag_workflow.py\n    \ud83d\udcc4 file_chunker.py\n    \ud83d\udcc4 file_summarizer.py\n    \ud83d\udcc4 main.py\n    \ud83d\udcc4 mcp_helper.py\n    \ud83d\udcc4 models.py\n    \ud83d\udcc4 sbert_rag_assistant.py\n    \ud83d\udcc4 simple_rag_assistant.py\n    \ud83d\udcc4 template_processor.py\n    \ud83d\udcc4 test_auth.py\n  \ud83d\udcc1 review_assistant_env/\n    \ud83d\udcc1 include/\n      \ud83d\udcc1 python3.11/\n\n\u2026"
-}

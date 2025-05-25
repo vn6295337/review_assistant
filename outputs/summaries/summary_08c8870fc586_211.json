@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_211.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\npaths\n\nThis allows resuming workflows without rerunning everything.\n\n{\n  \"last_file\": \"my_big_codebase.py\",\n  \"chunks\": [\"chunk_01.json\", \"chunk_02.json\"],\n  \"summary_files\": [\"summary_01.txt\", \"summary_02.txt\"],\n  \"prompt_file\": \"full_review_prompt.txt\"\n}\n\u2705 6. Metadata in Chunks\nEnhance each chunk with metadata for better tracking and future indexing:\n\n{\n  \"chunk_id\": \"chunk_003\",\n  \"file_name\": \"project.py\",\n  \"char_start\": 4000,\n  \"char_end\": 5999,\n  \"content\": \"...\",\n  \"summary\": \"...\",\n\n\u2026"
-}

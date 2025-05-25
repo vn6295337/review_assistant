@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_311.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nquestion:\"\nread -r QUESTION\n\necho \"Enter any notes you want to add:\"\nread -r NOTES\n\necho \"Enter a final comment or conclusion:\"\nread -r CONCLUSION\n\n# === Generate Prompt ===\necho \"\ud83d\udee0 Generating prompt using latest summary: $LATEST_SUMMARY\"\npython3 \"$MCP_HELPER\" create \\\n  --template \"$TEMPLATE\" \\\n  --output \"$PROMPT_OUT\" \\\n  --var title=\"$TITLE\" \\\n  --context-file \"$LATEST_SUMMARY\" summary \\\n  --var question=\"$QUESTION\" \\\n  --var notes=\"$NOTES\" \\\n  --var conclusion=\"$CONCLUSION\"\n\n\n\u2026"
-}

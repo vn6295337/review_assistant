@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_51.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n:\n            output_file = os.path.join(output_dir, f\"{chunk['id']}.json\")\n            with open(output_file, 'w', encoding='utf-8') as f:\n                json.dump(chunk, f, indent=2)\n                \n            if verbose:\n                print(f\"Saved chunk {chunk['id']} to {output_file}\")\n        \n        if verbose:\n            print(f\"Created {len(chunks)} chunks with size {chunk_size} and overlap {overlap}\")\n        \n        return len(chunks)\n        \n    except Exception as e:\n        print(f\"Error chunking file: {str(e)}\")\n        return -1\n\ndef main():\n    \"\"\"Main function to parse arguments and run the chunker.\"\"\"\n    parser = argparse.ArgumentParser(description='Break down large files into manageable chunks')\n\n\u2026"
-}

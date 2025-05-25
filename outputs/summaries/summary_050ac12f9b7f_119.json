@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_119.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nk if a file exists\ncheck_file() {\n    if [ -f \"$1\" ]; then\n        echo \"\u2705 File exists: $1\"\n        echo \"File size: $(du -h \"$1\" | cut -f1)\"\n    else\n        echo \"\u274c File does not exist: $1\"\n    fi\n    echo \"\"\n}\n\n# Check main directories\necho \"--- Checking main directories ---\"\ncheck_dir \".\"\ncheck_dir \"./scripts\"\ncheck_dir \"./prompts\"\ncheck_dir \"./outputs\"\ncheck_dir \"./outputs/chunks\"\ncheck_dir \"./outputs/summaries\"\ncheck_dir \"./codebase\"\n\n\u2026"
-}

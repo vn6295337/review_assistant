@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_62.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n__(self) -> str:\n        return f\"<Product {self.name} (${self.price})>\"\n\nclass Order(db.Model):\n    \"\"\"Order model for tracking purchases.\"\"\"\n\n    id = db.Column(db.Integer, primary_key=True)\n    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)\n    status = db.Column(db.String(20), default='pending')  # pending, shipped, delivered, cancelled\n    total_amount = db.Column(db.Float)\n    created_at = db.Column(db.DateTime, default=now_ist)\n\n    items = db.relationship('OrderItem', backref='order', lazy=True)\n\n    def to_dict(self) -> Dict[str, Any]:\n        return {\n            'id': self.id,\n            'user_id': self.user_id,\n            'status': self.status,\n            'total_amount': self.total_amount,\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_212.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nnes = content.strip().splitlines()\n    summary_text = \"\\n\".join(lines[:20])\nWhat to do now\nPick Option A (up-to-date) or Option B (older transformers).\n\nRun the install commands inside your virtual environment.\n\nRe-run your RAG workflow:\n\nscripts/run_chat.sh \"Chat with CFO\"\nIt should chunk \u2192 summarise (with the model) \u2192 build prompt without errors.\n\nLet me know if you hit any other road-blocks!\n\nYou said:\nTried option 1:\n(review_assistant_env) km_project@penguin:~$ python - <<'PY'\nimport torch, numpy, transformers\nprint(\"torch\", torch.__version__)\nprint(\"numpy\", numpy.__version__)\n\n\u2026"
-}

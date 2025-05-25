@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_309.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n\"{\"\n    echo \"  \\\"title\\\": \\\"$title\\\",\"\n    echo \"  \\\"messages\\\": [\"\n    awk '\n      function json_escape(str) {\n        gsub(/\\\\/,\"\\\\\\\\\",str)\n        gsub(/\"/,\"\\\\\\\"\",str)\n        return str\n      }\n      /^Human:/ {\n        sub(/^Human:[ ]*/, \"\")\n        printf \"    {\\\"role\\\": \\\"human\\\", \\\"content\\\": \\\"%s\\\"},\\n\", json_escape($0)\n      }\n      /^Claude:/ {\n        sub(/^Claude:[ ]*/, \"\")\n        printf \"    {\\\"role\\\": \\\"claude\\\", \\\"content\\\": \\\"%s\\\"},\\n\", json_escape($0)\n      }\n    ' \"$input_file\" | sed '$ s/,$//'\n    echo \"  ]\"\n    echo \"}\"\n\n\u2026"
-}

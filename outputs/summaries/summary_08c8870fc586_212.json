@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_212.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nentire folder\n\ntag_chunks.py: Add topic/keyword tags to chunks automatically for filtering\n\n\u2705 Summary of Enhancements\nArea\tImprovement\nScripts\tUnified interface (rag.sh)\nConfiguration\tCentral config.env file\nTemplates\tSpecialized markdown templates\nWorkflow\tSyntax fix, auto modes, better UX\nSession Persistence\tSession state in .json file\nChunk Metadata\tTrack context, source, time\nLocal Embedding (optional)\tFast TF-IDF or MiniLM-based vectors\nCaching\tSkip unchanged files\nChat History\tSave and search past chats\nPortability\tSelf-contained project.zip bundles\nWould you like me to generate:\n\nA complete replacement rag.sh script?\n\n\n\u2026"
-}

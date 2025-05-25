@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_201.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nof just showing a preview of the chunk).\n\nYou said:\nyes\nChatGPT said:\nGreat \u2014 here\u2019s how we\u2019ll extend your script to summarize each chunk using a local or online model, instead of just previewing the first 20 lines.\n\n\u2705 Plan to Upgrade file_summarizer.py with Model-Based Summarization\n\ud83e\udde0 Step 1: Add a summarization model\nFor now, we\u2019ll support two options:\n\nOffline (local model) \u2014 if available, like transformers + t5-small\n\nOnline (OpenAI or other) \u2014 if you want, but let\u2019s keep it offline-first\n\n\ud83d\udee0\ufe0f Modified Code: Uses Local HuggingFace Model (t5-small)\nRequirements:\npip install transformers torch\n\u2728 New file_summarizer.py (Model-Based)\n#!/usr/bin/env python3\n\n\u2026"
-}

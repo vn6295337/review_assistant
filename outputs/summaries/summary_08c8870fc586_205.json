@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_205.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nES_DIR\"; do\n  mkdir -p \"$dir\"\ndone\n\n\nThen source this in all your scripts:\nbash\n#!/bin/bash\nsource \"$(dirname \"$0\")/config.sh\"\n\n\n### 3. Template Enhancement\n\nCreate more specialized templates for different use cases:\n\n#### Code Review Template\nmarkdown\n# Code Review: {title}\n\n## Context Information\n\n\u2026"
-}

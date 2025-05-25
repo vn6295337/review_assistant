@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_224.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nterial\n3. Any potential issues or areas for improvement\n4. Recommendations for next steps\n\nThank you for your analysis!\nEOL\n  echo -e \"${GREEN}\u2713 Created basic template at $TEMPLATE_FILE${NC}\"\nfi\n\n# Step 1: Check for JSON chunks\necho -e \"${BLUE}Step 1: Checking for chunk files...${NC}\"\nchunk_count=$(find \"$CHUNKS_DIR\" -name \"*.json\" | wc -l)\n\nif [ \"$chunk_count\" -eq 0 ]; then\n  echo -e \"${YELLOW}\u26a0 No chunk files found in $CHUNKS_DIR${NC}\"\n  echo \"\"\n  echo -e \"${BLUE}Would you like to create chunks from a source file? (y/n)${NC}\"\n  read -r create_chunks\n  \n  if [ \"$create_chunks\" = \"y\" ]; then\n\n\u2026"
-}

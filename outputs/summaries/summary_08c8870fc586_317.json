@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_317.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nry not found\"; return; }\n  python3 mcp_helper.py list --dir \"$MCP_DATA_DIR\"\n}\n\ncreate_new_prompt() {\n  echo \"Enter a name for your new prompt:\"\n  read -r PROMPT_NAME\n  \n  if [ -z \"$PROMPT_NAME\" ]; then\n    echo \"Error: Prompt name cannot be empty\"\n    return\n  fi\n  \n  cd \"$SCRIPTS_DIR\" || { echo \"Error: Scripts directory not found\"; return; }\n  python3 mcp_helper.py create \"$PROMPT_NAME\" --dir \"$MCP_DATA_DIR\"\n}\n\nadd_context_to_prompt() {\n  echo \"First, let's list your available prompts:\"\n  list_prompts\n\n\u2026"
-}

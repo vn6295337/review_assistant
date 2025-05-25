@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_190.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n--------------------------------\nCore Script: file_chunker.py\n\nDescription:\nfile_chunker.py \u2500 Break large files into overlapping JSON chunks\n----------------------------------------------------------------\n* Pure\u2011Python; zero external dependencies\n* Defaults come from scripts/config.sh (if available) but can be overridden\n* Adds rich metadata (source path, char offsets, timestamp, SHA256 of content)\n\nCommand line arguments: Uses argparse for command-line arguments\n\nFunctions:\n- chunk_text: Return a list of chunk dicts ready for JSON serialisation.\n- write_chunks: Write each chunk as a separate JSON file; return # actually written.\n- parse_cli\n- main\n\nMain function: main\n\n\n\u2026"
-}

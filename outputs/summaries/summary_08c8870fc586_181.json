@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_181.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nant/scripts/config.sh\" \"/mnt/chromeos/removable/USB Drive/review_assistant/\"\nThen run from scripts folder:\n\n./run_chat.sh \"Chat with CFO\"\nThis is the easiest fix and matches how your script expects it.\n\nOption 2: Modify run_chat.sh to look for config.sh inside scripts\nIn run_chat.sh, find this line:\n\nCONFIG_FILE=\"${SCRIPT_DIR}/../config.sh\"\nand change it to:\n\nCONFIG_FILE=\"${SCRIPT_DIR}/config.sh\"\nThis will make the script source config.sh from the same folder where run_chat.sh lives.\n\nSummary:\nMoving config.sh to root is cleaner for your current script structure.\n\nOr, if you prefer to keep config.sh inside scripts, update the script\u2019s CONFIG_FILE path as shown above.\n\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_301.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ntimization. Basic cleanup only.\"\n      sed -i '/^[[:space:]]*$/d' \"$path\"\n      ;;\n  esac\n  \n  # Calculate space savings\n  original_size=$(wc -c < \"${path}.bak\")\n  new_size=$(wc -c < \"$path\")\n  saved=$(( original_size - new_size ))\n  percent=$(( saved * 100 / original_size ))\n  \n  echo \"\u2705 Optimization complete\"\n  echo \"Original size: $original_size bytes\"\n  echo \"New size: $new_size bytes\"\n  echo \"Saved: $saved bytes ($percent%)\"\n}\n\n# Main function to parse arguments and call appropriate function\nmain() {\n  # No arguments provided\n\n\u2026"
-}

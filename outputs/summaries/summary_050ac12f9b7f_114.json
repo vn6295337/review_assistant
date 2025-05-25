@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_114.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nse if ($0 ~ /^Claude:/) {\n        print \"## Claude\\n\"; $1=\"\"; print $0 \"\\n---\\n\";\n      } else {\n        print $0;\n      }\n    }' \"$input_file\"\n  } > \"$output_file\"\n}\n\n# === Export chat in JSON format (basic example) ===\nexport_json() {\n  local input_file=\"$1\"\n  local output_file=\"$2\"\n  local title=\"$3\"\n\n  # Basic JSON array of messages with role and content extracted from lines starting with \"Human:\" or \"Claude:\"\n  {\n    echo \"{\"\n    echo \"  \\\"title\\\": \\\"$title\\\",\"\n    echo \"  \\\"messages\\\": [\"\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_334.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n_count = 0\n    file_count = 0\n\n    for filename in sorted(os.listdir(input_dir)):\n        if filename.endswith('.json'):\n            file_count += 1\n            input_file = os.path.join(input_dir, filename)\n            if summarize_chunk(input_file, output_dir):\n                success_count += 1\n\n    if verbose:\n        print(\"\\nSummary Generation Complete\")\n        print(f\"Processed {file_count} files\")\n        print(f\"Successfully summarized {success_count} files\")\n\n    return success_count\n\n\ndef main():\n    parser = argparse.ArgumentParser(\n\n\u2026"
-}

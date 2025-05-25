@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_104.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nhead -5\n  \n  echo -e \"\\nMost recent activity:\"\n  find \"$ROOT_DIR\" -type f -not -path \"*/\\.*\" -mtime -7 | head -5\n}\n\n# Combine chunks\ncombine_chunks() {\n  if [[ $# -lt 2 ]]; then\n    echo \"Error: Please provide at least two files to combine\"\n    return 1\n  fi\n  \n  log \"Combining chunks: $*\"\n  \n  echo \"### Combined Context ###\"\n  echo \"# Generated on $(date)\"\n  echo \"# Files: $*\"\n  echo \"########################\"\n  echo \"\"\n\n\u2026"
-}

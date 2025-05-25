@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_335.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nead_text(encoding='utf-8')\n    except Exception as e:\n        print(f\"\u26a0 Error loading template: {e}\")\n        return None\n\n\ndef load_summaries(summaries_dir: Path, verbose: bool = False) -> List[dict]:\n    \"\"\"Load all summary JSON files in a directory.\"\"\"\n    summaries = []\n    try:\n        summary_files = sorted(summaries_dir.glob(\"summary_*.json\"))\n        for file in summary_files:\n            with open(file, 'r', encoding='utf-8') as f:\n                data = json.load(f)\n                summaries.append(data)\n                if verbose:\n                    print(f\"\u2713 Loaded summary: {file.name}\")\n    except Exception as e:\n        print(f\"\u26a0 Error loading summaries: {e}\")\n    return summaries\n\n\u2026"
-}

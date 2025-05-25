@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_161.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\now().strftime(\"%Y%m%d_%H%M%S\")\n            filename = f\"snippet_{i}_{j}_{timestamp}.{ext}\"\n            filepath = os.path.join(code_dir, filename)\n            with open(filepath, 'w', encoding='utf-8') as f:\n                f.write(code)\n            code_files.append(filepath)\n    return code_files\n\n\ndef main():\n    args = parse_args()\n\n    if not reset_output_directory(args.output_dir):\n        fallback = os.path.expanduser(\"~/Downloads/chat_exports\")\n        print(f\"\u26a0 Falling back to: {fallback}\")\n        args.output_dir = fallback\n        reset_output_directory(fallback)\n\n    title = args.title.strip() or \"Claude Chat Export\"\n    content = read_chat_from_file(args.input_file)\n\n\u2026"
-}

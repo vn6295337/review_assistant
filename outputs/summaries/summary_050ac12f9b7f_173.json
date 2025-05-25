@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_173.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n\u2705 Updated chat_exporter.py\nUpdated to dynamically read config from the environment. Here\u2019s the full code:\n\n#!/usr/bin/env python3\n\"\"\"\nchat_exporter.py - Interactive chat session ingestor for the RAG pipeline.\n\n1. Opens a blank nano buffer.\n2. User pastes the chat and exits nano.\n3. The content is saved to codebase/chat_sessions/ as a timestamped file.\n4. The file is passed to file_chunker.py \u2192 outputs/chunks/\n5. Then to file_summarizer.py \u2192 outputs/summaries/\n\"\"\"\n\nimport os\nimport subprocess\nimport shutil\nimport datetime\nfrom pathlib import Path\nimport argparse\n\n\u2026"
-}

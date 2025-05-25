@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_300.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nocal path=\"$1\"\n  \n  if [[ ! -f \"$path\" ]]; then\n    echo \"Error: File not found: $path\"\n    return 1\n  fi\n  \n  log \"Regenerating chunks and summaries for $path\"\n  \n  # Check if the core scripts exist\n  if [[ ! -f \"$ROOT_DIR/core/file_chunker.py\" || ! -f \"$ROOT_DIR/core/file_summarizer.py\" ]]; then\n    echo \"Error: Core RAG scripts not found\"\n    return 1\n  fi\n  \n  # Run chunking and summarization\n  echo \"Chunking file...\"\n  python3 \"$ROOT_DIR/core/file_chunker.py\" \"$path\" --output-dir \"$CHUNKS_DIR\"\n  \n  echo \"Creating summary...\"\n\n\u2026"
-}

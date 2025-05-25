@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_310.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n} > \"$OUTPUT_FILE\"\n      ;;\n  esac\n\n  echo -e \"${GREEN}\u2705 Chat exported to: $OUTPUT_FILE${NC}\"\n\n  if prompt_yes_no \"Do you want to process this file with your RAG tools?\"; then\n    echo -e \"${CYAN}\ud83d\ude80 Running file_chunker.py...${NC}\"\n    python3 \"$PYTHON_DIR/file_chunker.py\" \"$OUTPUT_FILE\" --output \"$CHUNKS_DIR\"\n\n    if prompt_yes_no \"Do you want to generate summaries as well?\"; then\n      echo -e \"${CYAN}\ud83d\udcda Running file_summarizer.py...${NC}\"\n      python3 \"$PYTHON_DIR/file_summarizer.py\" \"$CHUNKS_DIR\" --output \"$SUMMARIES_DIR\"\n    fi\n\n    echo -e \"${GREEN}\u2705 Processing complete!${NC}\"\n  else\n    echo \"Skipping RAG processing.\"\n  fi\n}\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_259.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ntswith('Bearer '):\n                token = auth_header[7:]  # Remove 'Bearer ' prefix\n        \n        if not token:\n            return jsonify({'error': 'Token is missing'}), 401\n            \n        payload = decode_jwt_token(token)\n        if not payload:\n            return jsonify({'error': 'Invalid token'}), 401\n            \n        user = User.query.get(payload['sub'])\n        if not user:\n            return jsonify({'error': 'User not found'}), 401\n            \n        return f(user, *args, **kwargs)\n    \n    return decorated_function\nChatGPT said:\nauth.py has been modernised and is now available in the canvas:\n\n\n\u2026"
-}

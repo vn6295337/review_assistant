@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_170.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ned. Exiting.\")\n        tmp_file.unlink(missing_ok=True)\n        return\n\n    # 3\ufe0f\u20e3  Move to codebase/chat_sessions with timestamped name\n    timestamp = datetime.datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n    safe_title = args.title.strip().replace(\" \", \"_\")\n    dest_file = CODEBASE_DIR / f\"{safe_title}_{timestamp}.txt\"\n    shutil.move(tmp_file, dest_file)\n    print(f\"\u2705 Chat saved to: {dest_file}\")\n\n    # 4\ufe0f\u20e3  Run file_chunker.py\n    print(\"\ud83d\udd17 Chunking the chat file \u2026\")\n    run_python(FILE_CHUNKER,\n               \"--input-file\", dest_file,\n               \"--output-dir\", CHUNKS_DIR,\n               \"--chunk-size\", \"2000\",\n               \"--overlap\", \"200\")\n\n    # 5\ufe0f\u20e3  Run file_summarizer.py\n\n\u2026"
-}

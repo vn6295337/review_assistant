@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_208.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nime(os.path.join(chunks_dir, f)) \n                           for f in os.listdir(chunks_dir) if f.endswith('.json')])\n        \n        if cache_mtime > chunks_latest:\n            # Cache is newer than the latest chunk\n            print(\"Using cached embeddings\")\n            with open(cache_file, 'rb') as f:\n                return pickle.load(f)\n    \n    # Compute embeddings\n    embeddings = compute_embeddings(chunks_dir)\n    \n    # Save to cache\n    with open(cache_file, 'wb') as f:\n        pickle.dump(embeddings, f)\n    \n    return embeddings\n\n\n### 9. Add Chat History Integration\n\n\u2026"
-}

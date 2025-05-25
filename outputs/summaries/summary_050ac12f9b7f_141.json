@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_141.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nne\n\n\ndef save_prompt(prompt: str, output_dir: Path) -> Optional[Path]:\n    \"\"\"Save prompt to a timestamped .txt file.\"\"\"\n    try:\n        output_dir.mkdir(parents=True, exist_ok=True)\n        filename = f\"summary_prompt_{datetime.datetime.now():%Y%m%d_%H%M%S}.txt\"\n        output_path = output_dir / filename\n        output_path.write_text(prompt, encoding='utf-8')\n        return output_path\n    except Exception as e:\n        print(f\"\u26a0 Error saving prompt: {e}\")\n        return None\n\n\ndef main() -> int:\n    parser = argparse.ArgumentParser(description=\"Generate a master prompt from summarized chunks\")\n    parser.add_argument(\"--summaries-dir\", type=Path, default=DEFAULT_SUMMARIES_DIR,\n                        help=\"Directory containing summary files\")\n\n\u2026"
-}

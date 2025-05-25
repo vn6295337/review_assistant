@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_24.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\noutputs/chunks for consistency\n@@\n-if [ \"$chunk_count\" -eq 0 ]; then\n+if [[ \"$chunk_count\" -eq 0 ]]; then\n@@\n-    python3 \"${PYTHON_DIR}/file_chunker.py\" \\\n+    python3 \"${PYTHON_DIR}/file_chunker.py\" \\\n@@\n-else\n-  echo -e \"${GREEN}\u2713 Found $chunk_count chunk files${NC}\"\n-fi\n+# Re\u2011count in case we just created chunks\n+chunk_count=$(find \"$CHUNKS_DIR\" -name \"*.json\" | wc -l)\n+echo -e \"${GREEN}\u2713 Found $chunk_count chunk files${NC}\"\n@@\n-if [ \"$(find \"$SUMMARIES_DIR\" -name \"summary_*.json\" | wc -l)\" -gt 0 ]; then\n+if [[ \"$(find \"$SUMMARIES_DIR\" -name \"summary_*.json\" | wc -l)\" -gt 0 ]]; then\n@@\n-  fi\n-fi\n\n\u2026"
-}

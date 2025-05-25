@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_30.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nwith size $chunk_size and overlap $overlap...${NC}\"\n    python3 \"${PYTHON_DIR}/file_chunker.py\" \\\n      --input-file \"$source_file\" \\\n      --output-dir \"$CHUNKS_DIR\" \\\n      --chunk-size \"$chunk_size\" \\\n      --overlap \"$overlap\" \\\n      --verbose\n  else\n    echo -e \"${YELLOW}Exiting workflow as no chunks are available.${NC}\"\n    exit 0\n  fi\nelse\n  echo -e \"${GREEN}\u2713 Found $chunk_count chunk files${NC}\"\nfi\n\n# Step 2: Generate summaries\necho \"\"\necho -e \"${BLUE}Step 2: Generating summaries...${NC}\"\n\n# Clean up existing summaries if needed\n\n\u2026"
-}

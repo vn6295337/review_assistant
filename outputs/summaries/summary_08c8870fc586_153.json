@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_153.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n, f\"{filename}.md\")\n        with open(filepath, 'w', encoding='utf-8') as f:\n            f.write(format_as_markdown(messages, title))\n    \n    else:  # txt format\n        filepath = os.path.join(output_dir, f\"{filename}.txt\")\n        with open(filepath, 'w', encoding='utf-8') as f:\n            f.write(format_as_text(messages, title))\n    \n    return filepath\n\ndef extract_code_snippets(messages, output_dir):\n    \"\"\"Extract code snippets to separate files.\"\"\"\n    code_dir = os.path.join(output_dir, \"code_snippets\")\n    Path(code_dir).mkdir(exist_ok=True)\n    \n    code_files = []\n    code_pattern = r'\n(\\w*)\\n(.*?)\\n\n'\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_198.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nbash check_python_env.sh\n\n    \n\n## **Using the RAG Assistant**\n\n### **Basic Workflow**\n\nThe typical workflow has three main steps:\n\n1. **Chunking**: Break a large file into smaller pieces\n2. **Summarization**: Create summaries of each chunk\n3. **Prompt Generation**: Create a structured prompt to use with AI tools\n\nYou can run the entire workflow at once, or perform these steps individually.\n\n### **Running the Full Workflow**\n\nThe easiest way to use the RAG Assistant is with the full workflow script:\n\n\n\u2026"
-}

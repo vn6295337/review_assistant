@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_214.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\narge (4000 chars) - Better for narrative text\"\n    read -r chunk_size_option\n    \n    case $chunk_size_option in\n      1) chunk_size=500; overlap=50 ;;\n      2) chunk_size=2000; overlap=200 ;;\n      3) chunk_size=4000; overlap=400 ;;\n      *) chunk_size=2000; overlap=200 ;;  # Default to medium\n    esac\n    \n    echo -e \"${GREEN}Running file chunker with size $chunk_size and overlap $overlap...${NC}\"\n    python3 \"${PYTHON_DIR}/file_chunker.py\" \\\n      --input-file \"$source_file\" \\\n      --output-dir \"$CHUNKS_DIR\" \\\n      --chunk-size \"$chunk_size\" \\\n      --overlap \"$overlap\" \\\n      --verbose\n  else\n    echo -e \"${YELLOW}Exiting workflow as no chunks are available.${NC}\"\n    exit 0\n\n\u2026"
-}

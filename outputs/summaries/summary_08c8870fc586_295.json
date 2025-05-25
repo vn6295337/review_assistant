@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_295.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\necho -e \"${BLUE}==============================================${NC}\"\n}\n\nprint_footer() {\n  echo -e \"${BLUE}==============================================${NC}\"\n  echo -e \"${BLUE}       Environment Check Complete             ${NC}\"\n  echo -e \"${BLUE}==============================================${NC}\"\n}\n\ncheck_package_installed() {\n  local pkg=$1\n  echo -e \"\\n${YELLOW}Checking for $pkg:${NC}\"\n  if python3 -m pip list | grep -q \"$pkg\"; then\n    echo -e \"${GREEN}$pkg is installed${NC}\"\n  else\n    echo -e \"${RED}$pkg not found in pip list${NC}\"\n  fi\n}\n\ntest_import() {\n\n\u2026"
-}

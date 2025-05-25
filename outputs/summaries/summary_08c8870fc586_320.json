@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_320.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nelp \"mcp_helper.py\" \"export\" ;;\n            7) clear; show_help \"mcp_helper.py\" \"import\" ;;\n            8) continue ;;\n            *) echo \"Invalid choice\"; sleep 1 ;;\n          esac\n          ;;\n        8) continue ;;\n        *) echo \"Invalid choice\"; sleep 1 ;;\n      esac\n      ;;\n    3)\n      echo \"Exiting RAG Helper. Goodbye!\"\n      exit 0\n      ;;\n    *)\n      echo \"Invalid choice. Please try again.\"\n      sleep 1\n      ;;\n  esac\ndone\n\n\u2026"
-}

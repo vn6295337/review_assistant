@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_256.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\ntr) -> None:\n        self.username = username\n        self.email = email\n        self.password_hash = generate_password_hash(password)\n\n    def check_password(self, password: str) -> bool:\n        return check_password_hash(self.password_hash, password)\n\n    def to_dict(self) -> Dict[str, Any]:\n        return {\n            'id': self.id,\n            'username': self.username,\n            'email': self.email,\n            'is_active': self.is_active,\n            'created_at': self.created_at.isoformat()\n        }\n\n    def __repr__(self) -> str:\n        return f\"<User {self.username} ({self.email})>\"\n\n\n\u2026"
-}

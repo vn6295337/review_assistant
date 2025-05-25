@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_264.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nst\nimport jwt\nfrom datetime import datetime, timedelta\nfrom unittest.mock import patch\nfrom app.auth import create_jwt_token, decode_jwt_token\n\nclass TestAuth(unittest.TestCase):\n\n    @patch.dict('os.environ', {'SECRET_KEY': 'test-secret'})\n    def test_create_jwt_token(self):\n        user_id = 123\n        token = create_jwt_token(user_id)\n        decoded = jwt.decode(token, 'test-secret', algorithms=['HS256'])\n        self.assertEqual(decoded['sub'], user_id)\n\n    @patch.dict('os.environ', {'SECRET_KEY': 'test-secret'})\n    def test_decode_jwt_token(self):\n        user_id = 456\n        token = create_jwt_token(user_id)\n        self.assertEqual(decode_jwt_token(token)['sub'], user_id)\n\n\u2026"
-}

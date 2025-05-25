@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_273.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n(scores)\n    \n    # Score all chunks\n    scored_chunks = [(chunk, score_chunk(chunk)) for chunk in chunks]\n    \n    # Filter out chunks with zero score\n    scored_chunks = [(chunk, score) for chunk, score in scored_chunks if score > 0]\n    \n    # Sort by score in descending order\n    scored_chunks.sort(key=lambda x: x[1], reverse=True)\n    \n    # Return the top N chunks\n    return [chunk for chunk, _ in scored_chunks[:limit]]\n\ndef highlight_matches(content, query, context=0):\n    \"\"\"Highlight matches in the content.\"\"\"\n    keywords = query.lower().split()\n    lines = content.split('\\n')\n    result = []\n    \n\n\u2026"
-}

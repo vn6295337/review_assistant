@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_87.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nN_DIR, \"file_summarizer.py\"))\n    check_file(os.path.join(PYTHON_DIR, \"mcp_helper.py\"))\n    \n    # Check template file\n    print_section_header(\"Checking Template File\")\n    template_file = os.path.join(TEMPLATES_DIR, \"summary_prompt_template.md\")\n    if check_file(template_file):\n        check_template_variables(template_file)\n    \n    # Check chunk files\n    print_section_header(\"Checking Chunk Files\")\n    if check_directory(CHUNKS_RAW_DIR):\n        chunk_files = list_directory_files(CHUNKS_RAW_DIR, \"*.json\")\n        if chunk_files:\n            print(f\"\u2139 Examining first chunk file:\")\n            check_json_file(chunk_files[0])\n    \n    # Check summary files\n    print_section_header(\"Checking Summary Files\")\n    if check_directory(SUMMARIES_DIR):\n\n\u2026"
-}

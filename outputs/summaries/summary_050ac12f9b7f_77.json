@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_77.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nist of file extensions to search')\n    search_parser.add_argument('--limit', type=int, default=10, help='Maximum number of results to return')\n    search_parser.add_argument('--context', type=int, default=0, help='Number of context lines before and after match')\n    \n    return parser.parse_args()\n\ndef load_chunks(chunks_dir, extensions=None):\n    \"\"\"Load all chunks from the chunks directory.\"\"\"\n    chunks = []\n    chunks_dir = Path(chunks_dir)\n    \n    # Filter by extensions if specified\n    if extensions:\n        ext_list = extensions.split(',')\n        # Make sure each extension starts with a dot\n        ext_list = [ext if ext.startswith('.') else f'.{ext}' for ext in ext_list]\n    else:\n        ext_list = None\n    \n    # Walk through the chunks directory\n\n\u2026"
-}

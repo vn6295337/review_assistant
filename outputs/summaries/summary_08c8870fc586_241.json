@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_241.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nt + 1) / (self.df.get(tok, 0) + 1)) + 1\n            vec[tok] = tf * idf\n        return vec\n\n    @staticmethod\n    def cosine(a, b):\n        common = set(a) & set(b)\n        dot = sum(a[t]*b[t] for t in common)\n        mag = math.sqrt(sum(v*v for v in a.values())) * math.sqrt(sum(v*v for v in b.values()))\n        return 0.0 if mag == 0 else dot / mag\n\nclass VectorStore:\n    def __init__(self, texts, meta):\n        self.vect = SimpleVectorizer(); self.vect.fit(texts)\n        self.vecs = [self.vect.vector(t) for t in texts]\n        self.meta, self.texts = meta, texts\n\n    def search(self, query, k=3):\n        qv = self.vect.vector(query)\n        sims = [self.vect.cosine(qv, v) for v in self.vecs]\n\n\u2026"
-}

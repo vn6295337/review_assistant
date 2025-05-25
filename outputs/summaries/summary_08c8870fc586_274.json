@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_274.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nks(chunks, args.query, args.limit)\n    print(f\"Found {len(results)} matching chunks\")\n    \n    # Highlight matches\n    for chunk in results:\n        chunk['highlighted_content'] = highlight_matches(chunk['content'], args.query, args.context)\n    \n    # Display results\n    for i, chunk in enumerate(results):\n        print(f\"\\n--- Result {i+1} ---\")\n        print(f\"File: {chunk.get('file_path', 'Unknown')}\")\n        print(f\"Chunk: {chunk.get('chunk_id', 'Unknown')}\")\n        print(\"\\nContent:\")\n        print(chunk['highlighted_content'])\n    \n    # Save results to file if specified\n    if args.output:\n        try:\n            output_dir = Path(args.output).parent\n            output_dir.mkdir(parents=True, exist_ok=True)\n\n\u2026"
-}

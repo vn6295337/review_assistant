@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_158.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n_dir)\n\n    print(\"\\n\u2705 Export Complete\")\n    print(f\"Chat saved to: {filepath}\")\n    if code_files:\n        print(f\"Extracted {len(code_files)} code snippets to: {os.path.join(args.output_dir, 'code_snippets')}\")\n\n    print(f\"\\nTo continue processing, run:\\npython3 /mnt/chromeos/removable/USB\\\\ Drive/review_assistant/scripts/file_chunker.py --input-file \\\"{filepath}\\\"\")\n\n\nif __name__ == \"__main__\":\n    main()\n\u2705 Run it like this:\npython3 chat_exporter.py --format md --title \"Claude Chat May 20\"\nLet me know if you want:\n\nThe code_snippets/ folder cleaned as well (currently it's recreated per run)\n\nAutomatic opening of the saved file (if your Chromebook environment supports it)\n\n\n\u2026"
-}

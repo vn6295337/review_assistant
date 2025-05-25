@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_48.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nexcept (KeyboardInterrupt, EOFError):\n            break\n    print(\"\ud83d\udc4b Goodbye!\")\n\nif __name__ == \"__main__\":\n    main()\n2\u202f\u00b7\u202fsbert_rag_assistant.py  (formerly rag_assistant.py)\n#!/usr/bin/env python3\n\"\"\"\nSBERT\u2011powered RAG Assistant\n---------------------------\nRequires: sentence-transformers, torch (heavy).\n\nUsage:\n  ./sbert_rag_assistant.py                # uses CHUNKS_DIR from config.sh\n  ./sbert_rag_assistant.py --chunks-dir ./my_chunks --top-k 8\n\"\"\"\n\nimport argparse, json, os\nfrom pathlib import Path\n\n\u2026"
-}

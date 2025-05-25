@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_55.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nverbose output')\n    args = parser.parse_args()\n    \n    if args.verbose:\n        print(f\"Loading template from: {args.template_file}\")\n    \n    template = load_template(args.template_file)\n    if not template:\n        print(\"\u274c Failed to load template\")\n        return 1\n    \n    if args.verbose:\n        print(f\"Loading summaries from: {args.summaries_dir}\")\n    \n    summaries = load_summaries(args.summaries_dir)\n    if not summaries:\n        print(\"\u274c No summaries found\")\n        return 1\n    \n    if args.verbose:\n\n\u2026"
-}

@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_21.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n-e \"${YELLOW}Opening prompt in terminal instead:${NC}\"\n        cat \"$latest_prompt\"\n      fi\n      ;;\n    3)\n      if command -v nano &> /dev/null; then\n        nano \"$latest_prompt\"\n      elif command -v vim &> /dev/null; then\n        vim \"$latest_prompt\"\n      else\n        echo -e \"${RED}\u274c No text editor found. Displaying prompt in terminal:${NC}\"\n        cat \"$latest_prompt\"\n      fi\n      ;;\n    *)\n      ;;\n  esac\nelse\n  echo \"\"\n  echo -e \"${RED}\u274c No prompt file was generated. Please check for errors.${NC}\"\n\n\u2026"
-}

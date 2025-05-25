@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_226.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n\"\n  read -r prompt_action\n  \n  case $prompt_action in\n    1)\n      echo \"\"\n      echo -e \"${BLUE}============== PROMPT CONTENT ================${NC}\"\n      echo \"\"\n      cat \"$latest_prompt\"\n      echo \"\"\n      echo -e \"${BLUE}=============================================${NC}\"\n      ;;\n    2)\n      if command -v xclip &> /dev/null; then\n        cat \"$latest_prompt\" | xclip -selection clipboard\n        echo -e \"${GREEN}\u2713 Prompt copied to clipboard!${NC}\"\n      else\n        echo -e \"${RED}\u274c xclip not installed. Please install it with 'sudo apt-get install xclip'${NC}\"\n        echo -e \"${YELLOW}Opening prompt in terminal instead:${NC}\"\n        cat \"$latest_prompt\"\n\n\u2026"
-}

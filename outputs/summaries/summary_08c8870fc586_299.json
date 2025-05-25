@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_299.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n# Combine all provided files with separators\n  for file in \"$@\"; do\n    if [[ -f \"$file\" ]]; then\n      echo -e \"\\n--- BEGIN: $(basename \"$file\") ---\\n\"\n      cat \"$file\"\n      echo -e \"\\n--- END: $(basename \"$file\") ---\\n\"\n    else\n      echo \"Warning: File not found: $file\"\n    fi\n  done\n}\n\n# Extract information from file\nextract_info() {\n  local type=\"$1\"\n  local path=\"$2\"\n  \n  if [[ ! -f \"$path\" ]]; then\n    echo \"Error: File not found: $path\"\n    return 1\n\n\u2026"
-}

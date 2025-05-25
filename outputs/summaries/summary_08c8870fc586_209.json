@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_209.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n\"/mnt/chromeos/removable\" \"/media\" \"/mnt\"; do\n    if [ -d \"$path\" ]; then\n      # Look for directories that might be a USB drive\n      for dir in \"$path\"/*; do\n        if [ -d \"$dir\" ] && [ -w \"$dir\" ]; then\n          # Check if it has the RAG directory or can be written to\n          if [ -d \"$dir/review_assistant\" ]; then\n            echo \"$dir/review_assistant\"\n            return 0\n          fi\n        fi\n      done\n    fi\n  done\n  \n  # Default path if not found\n  echo \"/mnt/chromeos/removable/USB Drive/review_assistant\"\n  return 1\n}\n\n\n\u2026"
-}

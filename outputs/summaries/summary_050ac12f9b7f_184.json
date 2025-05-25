@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_184.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nRET_KEY=\"${SECRET_KEY:-development-secret-key}\"\n\n# === Create directories if they don't exist ===\nfor dir in \"$CHUNKS_DIR\" \"$SUMMARIES_DIR\" \"$PROMPTS_DIR\" \"$MCP_DATA_DIR\" \"$TEMPLATES_DIR\" \"$CHAT_SESSIONS_DIR\"; do\n  [ -d \"$dir\" ] || mkdir -p \"$dir\"\ndone\n\n# === Function to print configuration ===\nprint_config() {\n  echo \"RAG Assistant Configuration:\"\n  echo \"-----------------------------\"\n  echo \"RAG_ROOT         = $RAG_ROOT\"\n  echo \"PYTHON_DIR       = $PYTHON_DIR\"\n  echo \"SCRIPTS_DIR      = $SCRIPTS_DIR\"\n  echo \"TEMPLATES_DIR    = $TEMPLATES_DIR\"\n  echo \"OUTPUTS_DIR      = $OUTPUTS_DIR\"\n  echo\n  echo \"CHUNKS_DIR       = $CHUNKS_DIR\"\n  echo \"SUMMARIES_DIR    = $SUMMARIES_DIR\"\n  echo \"PROMPTS_DIR      = $PROMPTS_DIR\"\n\n\u2026"
-}

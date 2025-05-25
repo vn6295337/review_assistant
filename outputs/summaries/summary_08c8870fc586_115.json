@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_115.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n] _-' | tr ' ' '_')\n  OUTPUT_FILE=\"$EXPORT_DIR/${SAFE_TITLE}_${TIMESTAMP}.$FORMAT\"\n\n  echo -e \"${CYAN}Processing chat export...${NC}\"\n  case \"$FORMAT\" in\n    md)\n      export_markdown \"$TMP_FILE\" \"$OUTPUT_FILE\" \"$CHAT_TITLE\"\n      ;;\n    json)\n      export_json \"$TMP_FILE\" \"$OUTPUT_FILE\" \"$CHAT_TITLE\"\n      ;;\n    txt)\n      {\n        echo \"$CHAT_TITLE\"\n        echo \"Exported on: $(date)\"\n        echo\n        cat \"$TMP_FILE\"\n      } > \"$OUTPUT_FILE\"\n      ;;\n  esac\n\n\u2026"
-}

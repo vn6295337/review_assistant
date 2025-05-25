@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/08c8870fc586_206.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\n10MB chunks\n  split -b 10M \"$source_file\" \"${TMP_DIR}/split_\"\n  \n  for split_file in \"${TMP_DIR}/split_\"*; do\n    python3 \"${PYTHON_DIR}/file_chunker.py\" \\\n      --input-file \"$split_file\" \\\n      --output-dir \"$CHUNKS_DIR\" \\\n      --chunk-size \"$chunk_size\" \\\n      --overlap \"$overlap\" \\\n      --append-mode \\\n      --verbose\n    rm \"$split_file\"  # Remove processed split\n  done\n}\n\n\n### 5. Session Persistence\n\nAdd a session management feature to remember context between runs:\n\n\n\u2026"
-}

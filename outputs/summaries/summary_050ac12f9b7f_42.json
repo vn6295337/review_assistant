@@ -1,4 +1,0 @@
-{
-  "source_file": "/mnt/chromeos/removable/USB Drive/review_assistant/outputs/chunks/050ac12f9b7f_42.json",
-  "summary": "### Chunk unknown \u2014 unknown\n\nrint(\"Failed to set up RAG assistant. Exiting.\")\n        return\n        \n    print(\"\\n\" + \"=\"*50)\n    print(\"RAG Assistant ready! Ask questions about your codebase.\")\n    print(\"Type 'exit' or 'quit' to end the session.\")\n    print(\"=\"*50 + \"\\n\")\n    \n    # Interactive Q&A loop\n    while True:\n        try:\n            question = input(\"\\nQuestion: \").strip()\n            if question.lower() in ['exit', 'quit', 'q']:\n                print(\"Goodbye!\")\n                break\n                \n            if not question:\n                continue\n                \n            start_time = datetime.now()\n\n\u2026"
-}
